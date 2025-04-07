@@ -5,13 +5,12 @@ const ThemeSection = () => {
     <section style={{
       background: 'linear-gradient(135deg, #004AAD, #00B4D8)',
       color: '#FFFFFF',
-      padding: '40px',
+      padding: '30px',
       borderRadius: '20px',
       border: '4.5px solid #BCC6CC',
-      textAlign: 'left',
-      marginBottom: '20px',
+      marginBottom: '10px',
       boxShadow: '0 10px 20px rgba(0, 0, 0, 0.5)',
-      maxWidth: '1200px',
+      maxWidth: '850px',
       margin: '0 auto 20px auto'
     }}>
       <h2 style={{ 
@@ -19,7 +18,8 @@ const ThemeSection = () => {
         fontSize: '2em', 
         fontWeight: 'bold',
         textAlign: 'center',
-        marginBottom: '20px'
+        marginBottom: '20px',
+        marginTop: '0',
       }}>THEME</h2>
       <p style={{ 
         fontFamily: 'Libre Baskerville, Georgia, serif',

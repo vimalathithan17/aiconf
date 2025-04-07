@@ -47,11 +47,21 @@ const ProfileCard = ({ name, designation, organization, photoUrl }) => {
       )}
       <h2 style={{
         margin: '9px 0 4.5px 0',
-        fontFamily: 'Georgia, serif',
+        fontFamily: 'Montserrat, "Trebuchet MS", Helvetica, sans-serif',
+        fontWeight: '800',
+        letterSpacing: '0.5px',
         color: '#FFFFFF',
       }}>{name}</h2>
-      <p style={{ margin: '4.5px 0', fontSize: '1.08em' }}>{designation}</p>
-      <p style={{ margin: '4.5px 0 0 0', fontSize: '0.99em' }}>{organization}</p>
+      <p style={{ 
+        margin: '4.5px 0', 
+        fontSize: '1em',
+        fontFamily: 'Segoe UI, Arial, sans-serif'
+      }}>{designation}</p>
+      <p style={{ 
+        margin: '10px 0 0 0', 
+        fontSize: '0.9em',
+        fontFamily: 'Segoe UI, Arial, sans-serif'
+      }}>{organization}</p>
     </div>
   );
 };

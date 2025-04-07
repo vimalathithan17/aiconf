@@ -47,18 +47,22 @@ const NormalCard = ({ name, designation, organization, iconUrl }) => {
       )}
       <h3 style={{
         margin: '15px 0 10px 0',
-        fontFamily: 'Arial, sans-serif',
+        fontFamily: 'Montserrat, "Trebuchet MS", Helvetica, sans-serif',
+        fontWeight: '700',
+        letterSpacing: '0.4px',
         fontSize: '1.2em',
         color: '#FFFFFF',
       }}>{name}</h3>
       <p style={{
-        margin: '0',
-        fontSize: '1em'
+        margin: '4.5px 0',
+        fontSize: '1em',
+        fontFamily: 'Segoe UI, Arial, sans-serif'
       }}>{designation}</p>
       {organization && (
         <p style={{
           margin: '10px 0 0 0',
           fontSize: '0.9em',
+          fontFamily: 'Segoe UI, Arial, sans-serif'
         }}>{organization}</p>
       )}
     </div>

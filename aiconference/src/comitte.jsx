@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import ProfileCard from './profilecard'; 
 import NormalCardGrid from './normalcard';
 
@@ -50,6 +50,15 @@ import thillairajan from './assets/Thillairajan.png';
 import rajesh from './assets/Rajesh.png';
 import kathirvel from './assets/Kathirvel.png';
 import anisha from './assets/ANisha.png';
+import barath from './assets/Barath.jpg';
+import murugappan from './assets/Murugappan.jpg';
+import sugunathan from './assets/sugananthan.jpg';
+import pablo from './assets/pablo.jpg';
+import shelly from './assets/shelly.png';
+import sonali from './assets/sonali.jpg';
+import badri from './assets/badri.jpg';
+import vijaykumar from './assets/vijayakumar.jpg';
+import thiyagrarajan from './assets/thiyagarajan.jpg';
 
 function Comitte() {
   useEffect(() => {
@@ -64,26 +73,26 @@ function Comitte() {
   const sampleNormalCards = [
     { 
       name: 'Dr D Indhumathi', 
-      designation: "Associate Professor , CSE", 
-      organization: 'PSG College of Technology', 
+      designation: "Associate Professor", 
+      organization: 'Dept. of Computer Science and Engineering', 
       iconUrl: IndhumathiImage 
     },
     { 
       name: 'Dr R Rekha', 
-      designation: 'Associate Professor , IT', 
-      organization: 'PSG College of Technology', 
+      designation: 'Associate Professor', 
+      organization: 'Dept. of Information Technology', 
       iconUrl: RekhaImage 
     },
     { 
       name: 'Dr K Sathiyapriya', 
-      designation: 'Associate Professor , CSE', 
-      organization: 'PSG College of Technology', 
+      designation: 'Associate Professor ', 
+      organization: 'Dept. of Computer Science and Engineering', 
       iconUrl: SathiyapriyaImage 
     },
     { 
       name: 'Dr R Senthil Prabha', 
-      designation: 'Associate Professor , IT', 
-      organization: 'PSG College of Technology', 
+      designation: 'Associate Professor', 
+      organization: 'Dept. of Information Technology', 
       iconUrl: SenthilPrabhaImage 
     },
   ];
@@ -91,96 +100,96 @@ function Comitte() {
   const Track1 = [
     {
         name: 'Dr D Indhumathi',
-        designation: 'Associate Professor , CSE',   
-        organization: 'PSG College of Technology', 
+        designation: 'Associate Professor ',   
+        organization: 'Dept. of Computer Science and Engineering', 
         iconUrl: IndhumathiImage 
     },
     {
         name: 'Dr R Rekha', 
-      designation: 'Associate Professor , IT', 
-      organization: 'PSG College of Technology', 
+      designation: 'Associate Professor', 
+      organization: 'Dept. of Information Technology', 
       iconUrl: RekhaImage 
     }
   ];
   const Track2 = [
     {
         name: 'Dr K Sathiyapriya',
-        designation: 'Associate Professor , CSE',   
-        organization: 'PSG College of Technology', 
+        designation: 'Associate Professor',   
+        organization: 'Dept. of Computer Science and Engineering', 
         iconUrl: SathiyapriyaImage 
     },
     {
       name: 'Dr S Bhama', 
-      designation: 'Assistant Professor (Sl.G) , CA', 
-      organization: 'PSG College of Technology', 
+      designation: 'Assistant Professor (Sl.Gr)', 
+      organization: 'Dept. of Computer Applications', 
       iconUrl: BhamaImage 
     }
   ];
   const Track3 = [
     {
         name: 'Dr R Senthil Prabha',
-        designation: 'Associate Professor , IT',  
-        organization: 'PSG College of Technology', 
+        designation: 'Associate Professor',  
+        organization: 'Dept. of Information Technology', 
         iconUrl: SenthilPrabhaImage
     },
     {
       name: 'Dr N Gopika Rani', 
-      designation: 'Assistant Professor (Sl.G) , CSE', 
-      organization: 'PSG College of Technology', 
+      designation: 'Assistant Professor (Sl.Gr)', 
+      organization: 'Dept. of Computer Science and Engineering', 
       iconUrl: GopikaRaniImage 
     }
   ];
   const Finance = [
     {
-      name: 'Ms Thirumahal',
-      designation: 'Assistant Professor(Sl.G) , CSE',
-      organization: 'PSG College of Technology',
+      name: 'Ms R Thirumahal',
+      designation: 'Assistant Professor(Sl.Gr)',
+      organization: 'Dept. of Computer Science and Engineering',
       iconUrl: ThirumahalImage,
     },
     {
       name: 'Dr C Shanmugam',
-      designation: 'Assistant Professor(Sl.G) , MECH',
-      organization: 'PSG College of Technology',
+      designation: 'Assistant Professor(Sl.Gr)',
+      organization: 'Dept. of Mechanical Engineering',
       iconUrl: ShanmugamImage,
     },
     {
       name: 'Dr S Sivaranjini',
-      designation: 'Assistant Professor(Sr.G) , CSE',
-      organization: 'PSG College of Technology',
+      designation: 'Assistant Professor(Sr.Gr)',
+      organization: 'Dept. of Computer Science and Engineering',
       iconUrl: SivaranjiniImage,
     },
   ];
   const Tutorial = [
     {
       name: 'Dr R Murugan',
-      designation: 'Professor (CAS) , TEXT',
-      organization: 'PSG College of Technology',
+      designation: 'Professor (CAS)',
+      organization: 'Dept. of Textile Technology',
       iconUrl: MuruganImage,
     },
     {
       name: 'Dr Nirmala Varghese',
-      designation: 'Associate Professor , AFD',
-      organization: 'PSG College of Technology',
+      designation: 'Associate Professor',
+      organization: 'Dept. of Apparel and Fashion Design',
       iconUrl: NirmalaImage,
     },
     {
       name: 'Mr A C Ramesh',
-      designation: 'Assistant Professor(Sl.G) , CSE',
-      organization: 'PSG College of Technology',
+      designation: 'Assistant Professor(Sl.Gr)',
+      organization: 'Dept. of Computer Science and Engineering',
       iconUrl: ACRImage,
     },
   ];
   const Publication = [
     {
       name: 'Dr B Sangeetha',
-      designation: 'Assistant Professor(Sl.G) , IT',
-      organization: 'PSG College of Technology',
+      designation: 'Assistant Professor(Sl.Gr)',
+      organization: 'Dept. of Information Technology',
       iconUrl: SangeethaImage,
     },
     {
       name: 'Mr J Prakash',
-      designation: 'Assistant Professor(Sr.G) , CSE',
-      organization: 'PSG College of Technology',
+      designation: 'Assistant Professor(Sr.Gr)',
+      organization: 'Dept. of Computer Science and Engineering',
       iconUrl: PrakashImage,
     },
     {
@@ -193,52 +202,52 @@ function Comitte() {
   const poster = [
     {
       name: 'Dr M Suresh',
-      designation: 'Associate Professor , RAE',
-      organization: 'PSG College of Technology',
+      designation: 'Associate Professor ',
+      organization: 'Dept. of Robotics and Automation Engineering',
       iconUrl: SureshImage,
     },
     {
       name: 'Dr S Vijayalakshmi',
-      designation: 'Assistant Professor(Sl.G) , CSE',
-      organization: 'PSG College of Technology',
+      designation: 'Assistant Professor(Sl.Gr)',
+      organization: 'Dept. of Computer Science and Engineering',
       iconUrl: VijayalakshmiImage,
     },
     {
       name: 'Dr D Sivaraj',
-      designation: 'Assistant Professor(Sl.G) , ECE',
-      organization: 'PSG College of Technology',
+      designation: 'Assistant Professor(Sl.Gr)',
+      organization: 'Dept. of Electrical and Communication Engineering',
       iconUrl: SivarajImage,
     },
     {
       name: 'Dr D Maruthamani',
-      designation: 'Assistant Professor(Sl.G) , CHEM',
-      organization: 'PSG College of Technology',
+      designation: 'Assistant Professor(Sl.Gr)',
+      organization: 'Dept. of Chemistry',
       iconUrl: MaruthamaniImage,
     },
     {
       name: 'Dr S Arul Jothi',
-      designation: 'Assistant Professor(Sr.G) , CSE',
-      organization: 'PSG College of Technology',
+      designation: 'Assistant Professor(Sr.Gr)',
+      organization: 'Dept. of Computer Science and Engineering',
       iconUrl: ArulJothiImage,
     },
   ];
   const govn = [
     {
       name: 'Dr A Natarajan',
-      designation: 'Professor(CAS) , EEE',
-      organization: 'PSG College of Technology',
+      designation: 'Professor(CAS)',
+      organization: 'Dept. of Electrical and Electronics Engineering',
       iconUrl: NatarajanImage,
     },
     {
       name: 'Dr D Jayaprasath',
-      designation: 'Associate Professor , ICE',
-      organization: 'PSG College of Technology',
+      designation: 'Associate Professor',
+      organization: 'Dept. of Instrumentation and Control Engineering',
       iconUrl: JayaprasathImage,
     },
     {
       name: 'Dr J Prabhavathi',
-      designation: 'Assistant Professor, ENG',
-      organization: 'PSG College of Technology',
+      designation: 'Assistant Professor',
+      organization: 'Dept. of English',
       iconUrl: PrabhavathiImage,
     },
   ];
@@ -247,62 +256,62 @@ function Comitte() {
       name: 'Dr K Suresh Kumar',
       designation: (
         <>
-          Associate Professor & HOD , HUM <br /> Director - PSG STEP
+          Director - PSG STEP <br /> Associate Professor & HOD (i/c)
         </>
       ),
-      organization: 'PSG College of Technology',
+      organization: 'Dept. of Humanities',
       iconUrl: SureshkumarImage,
     },
     {
       name: 'Dr D Brindha',
-      designation: 'Assistant Professor(Sl.G) , BME',
-      organization: 'PSG College of Technology',
+      designation: 'Assistant Professor(Sl.Gr)',
+      organization: 'Dept. of Biomedical Engineering',
       iconUrl: BrindhaImage,
     },
     {
       name: 'Mr G Karthik Vijaykumar',
-      designation: 'Assistant Professor(Sr.G), BIOTECH',
-      organization: 'PSG College of Technology',
+      designation: 'Assistant Professor(Sr.Gr)',
+      organization: 'Dept. of Biotechnology',
       iconUrl: KarthikVijaykumarImage,
     },
     {
       name: 'Ms A Dharani',
-      designation: 'Assistant Professor, CSE',
-      organization: 'PSG College of Technology',
+      designation: 'Assistant Professor',
+      organization: 'Dept. of Computer Science and Engineering',
       iconUrl: DharaniImage,
     },
   ];
   const publicity = [
     {
       name: 'Dr G Sai Sundara Krishnan',
-      designation: 'Professor , AMCS',
-      organization: 'PSG College of Technology',
+      designation: 'Professor',
+      organization: 'Dept. of Applied Mathematics and Computational Sciences',
       iconUrl: saisundara,
     },
     {
       name: 'Dr S Praveen Kumar',
-      designation: 'Assistant Professor, CIVIL',
-      organization: 'PSG College of Technology',
+      designation: 'Associate Professor',
+      organization: 'Dept. of Civil Engineering',
       iconUrl: praveeen,
     },
   ];
   const sponsor = [
     {
       name: 'Dr D Dhanalakshmi',
-      designation: 'Assistant Professor(Sl.G) , APS',
-      organization: 'PSG College of Technology',
+      designation: 'Assistant Professor(Sl.Gr) ',
+      organization: 'Dept. of Applied Science',
       iconUrl: dhanalakshmi,
     },
     {
       name: 'Dr R Surjith',
-      designation: 'Assistant Professor(Sl.G), FT',
-      organization: 'PSG College of Technology',
+      designation: 'Assistant Professor(Sl.Gr)',
+      organization: 'Dept. of Fashion Technology',
       iconUrl: surjith,
     },
     {
       name: 'Ms S K Abirami',
-      designation: 'Assistant Professor, CSE',
-      organization: 'PSG College of Technology',
+      designation: 'Assistant Professor',
+      organization: 'Dept. of Computer Science and Engineering',
       iconUrl: abirami,
     },
   ];
@@ -311,7 +320,7 @@ const international=[
         name: 'Dr J Kanchana',
         designation: (
             <>
-              Professor , Mechanical Engineering <br /> Director 
+              Director - Global Engagement <br />Professor - Mechanical Engineering 
             </>
           ),
         organization: 'PSG Institute of Advanced Studies',
@@ -319,110 +328,189 @@ const international=[
       },
       {
         name: 'Dr B Sridevi',
-        designation: 'Professor , MATH',
-        organization: 'PSG College of Technology',
+        designation: 'Professor ',
+        organization: 'Dept. of Mathematics',
         iconUrl: sridevi,
       },
       {
         name: 'Dr M Kalpana',
-        designation: 'Associate Professor , HUM',
-        organization: 'PSG College of Technology',
+        designation: 'Associate Professor',
+        organization: 'Dept. of Humanities',
         iconUrl: kalpana,
       },
       {
         name: 'Dr J Niresh',
-        designation: 'Assistant Professor(Sr.G) , AUTO',
-        organization: 'PSG College of Technology',
+        designation: 'Assistant Professor(Sr.Gr)',
+        organization: 'Dept. of Automobile Engineering',
         iconUrl: niresh,
       },
       {
-        name: 'Mr Veera Kumar',
-        designation: 'Assistant Professor , CSE',
-        organization: 'PSG College of Technology',
+        name: 'Mr S Veera Kumar',
+        designation: 'Assistant Professor',
+        organization: 'Dept. of Computer Science and Engineering',
         iconUrl: veerakumar,
       },
 ];
 const panelist = [
     {
       name: 'Dr K Thillairajan',
-      designation: 'Associate Professor(CAS) , MET',
-      organization: 'PSG College of Technology',
+      designation: 'Associate Professor(CAS)',
+      organization: 'Dept. of Mettallurgical Engineering',
       iconUrl: thillairajan,
     },
     {
       name: 'Dr R Rajesh',
-      designation: 'Assistant Professor(Sl.G), PROD',
-      organization: 'PSG College of Technology',
+      designation: 'Assistant Professor(Sl.Gr)',
+      organization: 'Dept. of Production Engineering',
       iconUrl: rajesh,
     },
     {
       name: 'Dr P Kathirvel',
-      designation: 'Assistant Professor, PHY',
-      organization: 'PSG College of Technology',
+      designation: 'Assistant Professor',
+      organization: 'Dept. of Physics',
       iconUrl: kathirvel,
     },
     {
       name: 'Ms C D Anisha',
-      designation: 'Assistant Professor, CSE',
-      organization: 'PSG College of Technology',
+      designation: 'Assistant Professor',
+      organization: 'Dept. of Computer Science and Engineering',
       iconUrl: anisha,
     },
   ];
 
   const advisoryProfiles = [
     {
-      name: 'Dr A Natarajan',
-      designation: 'Professor(CAS) , EEE',
-      organization: 'PSG College of Technology',
-      photoUrl: NatarajanImage,
-    },
-    {
-      name: 'Dr D Jayaprasath',
-      designation: 'Associate Professor , ICE',
-      organization: 'PSG College of Technology',
-      photoUrl: JayaprasathImage,
-    },
-    {
-      name: 'Dr J Prabhavathi',
-      designation: 'Assistant Professor, ENG',
-      organization: 'PSG College of Technology',
-      photoUrl: PrabhavathiImage,
-    },
-    {
-      name: 'Dr K Suresh Kumar',
+      name: "Dr Barath Narayanan",
       designation: (
         <>
-          Associate Professor & HOD , HUM <br /> Director - PSG STEP
+          Senior Research Scientist & Adjunct Professor <br />Sensor Software Systems<br />Dept. of ECE
         </>
       ),
-      organization: 'PSG College of Technology',
-      photoUrl: SureshkumarImage,
+      organization: "University of Dayton Research Institute, USA",
+      photoUrl: barath
     },
     {
-      name: 'Dr D Brindha',
-      designation: 'Assistant Professor(Sl.G) , BME',
-      organization: 'PSG College of Technology',
-      photoUrl: BrindhaImage,
+      name: "Dr M Murugappan",
+      designation: (
+        <>
+          Professor<br />Dept. of Electronics and Communication Engineering
+        </>
+      ),
+      organization: "Kuwait college of science and technology, Kuwait",
+      photoUrl: murugappan
     },
     {
-      name: 'Mr G Karthik Vijaykumar',
-      designation: 'Assistant Professor(Sr.G), BIOTECH',
-      organization: 'PSG College of Technology',
-      photoUrl: KarthikVijaykumarImage,
+      name: "Dr P N Suganthan",
+      designation: (
+        <>
+          KINDI Computing Research
+        </>
+      ),
+      organization: (
+        <>
+          Qatar University<br />Qatar
+        </>
+      ),
+      photoUrl: sugunathan
+    },
+    
+    {
+      name: "Dr Shelly Sachadev",
+      designation: (
+        <>
+          Associate Professor <br /> Dept. of Computer Science and Engineering
+        </>
+      ),
+      organization:(
+        <>
+         National Institute of Technology, Delhi
+        </>
+      ),
+      photoUrl: shelly,
+    },
+    
+    {
+      name: "Dr Sonali Agarwal",
+      designation:(
+        <>
+         Associate Professor<br />Dept. of Information Technology
+        </>
+      ), 
+      organization:(
+        <>
+        Indian Institute of Information Technology Allahabad
+        </>
+      ) ,
+      photoUrl: sonali,
     },
     {
-      name: 'Ms A Dharani',
-      designation: 'Assistant Professor, CSE',
-      organization: 'PSG College of Technology',
-      photoUrl: DharaniImage,
+      name: "Dr Badri Narayan Subudhi",
+      designation: (
+        <>
+        Associate Professor<br />Dept. of Electrical Engineering
+        </>
+      ) ,
+      organization: (
+        <>
+        Indian Institute of Technology Jammu <br /> Jammu and Kashmir
+        </>
+      ),
+      photoUrl: badri,
     },
     {
-      name: 'Dr G Sai Sundara Krishnan',
-      designation: 'Professor , AMCS',
-      organization: 'PSG College of Technology',
-      photoUrl: saisundara,
+      name: "Dr Vijayakumar Krishnasamy",
+      designation: (
+        <>
+          Associate Professor<br /> Department of ECE 
+        </>
+      ),
+      organization: (
+        <>
+          Indian Institute of Information Technology Design and Manufacturing<br />Kancheepuram
+        </>
+      ),
+      photoUrl: vijaykumar
+    },
+    {
+      name: " Mr.Thiyagarajan Subramani",
+      designation: (
+        <>
+          Chief Manager <br />Head of Radar Perception
+        </>
+      ),
+      organization:  (
+        <>
+          Continental Technical Center<br />India.
+        </>
+      ),
+      photoUrl: thiyagrarajan,
     },
   ];
+
+  // State for carousel
+  const [currentAdvisorySlide, setCurrentAdvisorySlide] = useState(0);
+  const cardsPerSlide = 2;
+  const totalSlides = Math.ceil(advisoryProfiles.length / cardsPerSlide);
+
+  // Auto-scroll effect
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentAdvisorySlide((prevSlide) => (prevSlide + 1) % totalSlides);
+    }, 3000); // Change slide every 3 seconds
+
+    return () => clearInterval(timer);
+  }, [totalSlides]);
+
+  // Function to navigate to a specific slide
+  const goToSlide = useCallback((slideIndex) => {
+    setCurrentAdvisorySlide(slideIndex);
+  }, []);
+
+  // Get visible cards for the current slide
+  const visibleAdvisoryCards = () => {
+    const startIndex = currentAdvisorySlide * cardsPerSlide;
+    return advisoryProfiles.slice(startIndex, startIndex + cardsPerSlide);
+  };
 
   const [activeSection, setActiveSection] = useState('Finance');
   const [activeTrack, setActiveTrack] = useState('Track1'); 
@@ -526,17 +614,27 @@ const panelist = [
           <h3 style={{ textAlign: 'center' }}>CHIEF PATRON</h3>
           <ProfileCard
             name="Shri L Gopalakrishnan"
-            designation="Managing Trustee"
-            organization="PSG & Sons Charities Trust"
+            designation={
+              <>
+                Managing Trustee <br /> PSG & Son's Charities Trust
+              </>
+            }
+            organization=""
             photoUrl={TrusteeImage}
           />
         </div>
+      </div>
+      <div style={{ display: 'flex', justifyContent: 'center', gap: '100px', flexWrap: 'wrap', marginBottom: '60px' }}>
         <div>
           <h3 style={{ textAlign: 'center'}}>PATRON</h3>
           <ProfileCard
             name="Dr K Prakasan"
-            designation="Principal"
-            organization="PSG College of Technology"
+            designation={
+              <>
+                Principal <br /> PSG College of Technology
+              </>
+            }
+            organization=""
             photoUrl={PrakasanImage}
           />
         </div>
@@ -557,46 +655,116 @@ const panelist = [
           />
         </div>
       </div>
-
+      <h3 style={{ textAlign: 'center', marginBottom: '25px', fontFamily: 'Montserrat, "Trebuchet MS", Helvetica, sans-serif', letterSpacing: '1px' }}>GENERAL CHAIRS</h3>
       {/* General Chairs */}
-      <div style={{ display: 'flex', justifyContent: 'center', gap: '100px', flexWrap: 'wrap' }}>
-        <div>
-          <h3 style={{ textAlign: 'center'}}>GENERAL CHAIR</h3>
-          <ProfileCard
-            name="Dr G R Karpagam"
-            designation={
-              <>
-                Professor, CSE <br /> Director <br />PSG - AI Consortium
-              </>
-            }
-            organization="PSG College of Technology"
-            photoUrl={GRKImage}
-          />
-        </div>
-        <div>
-          <h3 style={{ textAlign: 'center'}}>GENERAL CHAIR</h3>
-          <ProfileCard
-            name="Dr B Vinothkumar"
-            designation={
-              <>
-                Professor, IT <br /> Infrastructure Technical Lead <br /> PSG - AI Consortium
-              </>
-            }
-            organization="PSG College of Technology"
-            photoUrl={VinothImage}
-          />
+      <div style={{ 
+        marginBottom: '60px', 
+        background: 'linear-gradient(135deg, rgba(0, 74, 173, 0.4), rgba(0, 180, 216, 0.4))',
+        borderRadius: '20px',
+        padding: '30px',
+        boxShadow: '0 10px 20px rgba(0, 0, 0, 0.3)'
+      }}>
+        <div style={{ display: 'flex', justifyContent: 'center', gap: '100px', flexWrap: 'wrap' }}>
+          <div>
+            <ProfileCard
+              name="Dr G R Karpagam"
+              designation={
+                <>
+                  Professor<br />Dept. of Computer Science and Engineering<br /> Director , PSG - AI Consortium
+                </>
+              }
+              organization=""
+              photoUrl={GRKImage}
+            />
+          </div>
+          <div>
+            <ProfileCard
+              name="Dr B Vinoth Kumar"
+              designation={
+                <>
+                  Professor<br /> Dept. of Information Technology<br />Infrastructure Technical Lead ,<br /> PSG - AI Consortium
+                </>
+              }
+              organization=""
+              photoUrl={VinothImage}
+            />
+          </div>
         </div>
       </div>
+
       {/* Sample Normal Cards Section */}
-      <div style={{ marginTop: '60px' }}>
-        <h3 style={{ textAlign: 'center', marginBottom: '20px' }}>ORGANIZING CHAIRS</h3>
-        <NormalCardGrid cards={sampleNormalCards} />
+      <div style={{ marginBottom: '60px' }}>
+        <h3 style={{ textAlign: 'center', marginBottom: '25px', fontFamily: 'Montserrat, "Trebuchet MS", Helvetica, sans-serif', letterSpacing: '1px' }}>ORGANIZING CHAIRS</h3>
+        <div style={{ 
+          background: 'linear-gradient(135deg, rgba(0, 74, 173, 0.4), rgba(0, 180, 216, 0.4))',
+          borderRadius: '20px',
+          padding: '30px',
+          boxShadow: '0 10px 20px rgba(0, 0, 0, 0.3)'
+        }}>
+          <NormalCardGrid cards={sampleNormalCards} />
+        </div>
       </div>
-      
+      <h3 style={{ textAlign: 'center', marginBottom: '25px', fontFamily: 'Montserrat, "Trebuchet MS", Helvetica, sans-serif', letterSpacing: '1px' }}>ADVISORY BOARD</h3>
+      {/* Advisory Board Carousel */}
+      <div style={{ 
+        marginBottom: '60px', 
+        background: 'linear-gradient(135deg, rgba(0, 74, 173, 0.4), rgba(0, 180, 216, 0.4))',
+        borderRadius: '20px',
+        padding: '30px',
+        boxShadow: '0 10px 20px rgba(0, 0, 0, 0.3)'
+      }}>
+        {/* Carousel container */}
+        <div style={{ position: 'relative', maxWidth: '100%' }}>
+          {/* Cards container with transition effect */}
+          <div style={{ 
+            display: 'flex', 
+            justifyContent: 'center', 
+            gap: '100px', 
+            transition: 'opacity 0.5s ease',
+          }}>
+            {visibleAdvisoryCards().map((profile, index) => (
+              <div key={index}>
+                <ProfileCard
+                  name={profile.name}
+                  designation={profile.designation}
+                  organization={profile.organization}
+                  photoUrl={profile.photoUrl}
+                />
+              </div>
+            ))}
+          </div>
+          
+          {/* Navigation dots */}
+          <div style={{ 
+            display: 'flex', 
+            justifyContent: 'center', 
+            marginTop: '20px', 
+            gap: '10px' 
+          }}>
+            {Array.from({ length: totalSlides }).map((_, index) => (
+              <button
+                key={index}
+                onClick={() => goToSlide(index)}
+                aria-label={`Go to slide ${index + 1}`}
+                style={{
+                  width: '12px',
+                  height: '12px',
+                  borderRadius: '50%',
+                  border: 'none',
+                  backgroundColor: currentAdvisorySlide === index ? '#00B4D8' : '#004AAD',
+                  cursor: 'pointer',
+                  padding: 0,
+                  transition: 'background-color 0.3s ease',
+                }}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+
       {/* Track Chairs Section */}
       <div style={{ marginTop: '60px' }}>
-        <h3 style={{ textAlign: 'center', marginBottom: '20px' }}>TRACK CHAIRS</h3>
-        <br />
+        <h3 style={{ textAlign: 'center', marginBottom: '25px', fontFamily: 'Montserrat, "Trebuchet MS", Helvetica, sans-serif', letterSpacing: '1px' }}>TRACK CHAIRS</h3>
         {/* Track Tabs */}
         <div style={{
           display: 'flex',
@@ -614,10 +782,13 @@ const panelist = [
               color: '#FFFFFF',
               cursor: 'pointer',
               fontSize: '1em',
+              fontFamily: 'Libre Baskerville, Georgia, serif',
+              fontWeight: '500',
+              letterSpacing: '0.5px',
               transition: 'background-color 0.3s',
             }}
           >
-            TRACK 1 : AI GENESIS
+            TRACK 1 <br /><br />AI GENESIS
           </button>
           <button
             onClick={() => setActiveTrack('Track2')}
@@ -629,10 +800,13 @@ const panelist = [
               color: '#FFFFFF',
               cursor: 'pointer',
               fontSize: '1em',
+              fontFamily: 'Libre Baskerville, Georgia, serif',
+              fontWeight: '500',
+              letterSpacing: '0.5px',
               transition: 'background-color 0.3s',
             }}
           >
-            TRACK 2 : AI IMPACT
+            TRACK 2 <br /><br />AI IMPACT
           </button>
           <button
             onClick={() => setActiveTrack('Track3')}
@@ -644,23 +818,27 @@ const panelist = [
               color: '#FFFFFF',
               cursor: 'pointer',
               fontSize: '1em',
+              fontFamily: 'Libre Baskerville, Georgia, serif',
+              fontWeight: '500',
+              letterSpacing: '0.5px',
               transition: 'background-color 0.3s',
             }}
           >
-            TRACK 3 : AI HORIZON
+            TRACK 3 <br /><br />AI HORIZON
           </button>
         </div>
         {/* Render Active Track */}
         <div style={{
-          backgroundColor: 'linear-gradient(135deg, #004AAD, #00B4D8)',
+          background: 'linear-gradient(135deg, rgba(0, 74, 173, 0.4), rgba(0, 180, 216, 0.4))',
           borderRadius: '20px',
-          padding: '20px',
-          boxShadow: '0 10px 20px rgba(0, 0, 0, 0.5)',
+          padding: '30px',
+          boxShadow: '0 10px 20px rgba(0, 0, 0, 0.3)',
           color: '#FFFFFF',
           display: 'flex',
-          flexDirection: 'column', // Align items in a column
-          alignItems: 'center', // Center-align items
+          flexDirection: 'column',
+          alignItems: 'center',
           gap: '20px',
+          marginBottom: '60px'
         }}>
           {renderTrackSection()}
         </div>
@@ -686,6 +864,9 @@ const panelist = [
             color: '#FFFFFF',
             cursor: 'pointer',
             fontSize: '1em',
+            fontFamily: 'Libre Baskerville, Georgia, serif',
+            fontWeight: '500',
+            letterSpacing: '0.5px',
             transition: 'background-color 0.3s',
             flex: '1 1 calc(20% - 20px)', 
             maxWidth: 'calc(20% - 20px)',
@@ -703,6 +884,9 @@ const panelist = [
             color: '#FFFFFF',
             cursor: 'pointer',
             fontSize: '1em',
+            fontFamily: 'Libre Baskerville, Georgia, serif',
+            fontWeight: '500',
+            letterSpacing: '0.5px',
             transition: 'background-color 0.3s',
             flex: '1 1 calc(20% - 20px)',
             maxWidth: 'calc(20% - 20px)',
@@ -720,6 +904,9 @@ const panelist = [
             color: '#FFFFFF',
             cursor: 'pointer',
             fontSize: '1em',
+            fontFamily: 'Libre Baskerville, Georgia, serif',
+            fontWeight: '500',
+            letterSpacing: '0.5px',
             transition: 'background-color 0.3s',
             flex: '1 1 calc(20% - 20px)', 
             maxWidth: 'calc(20% - 20px)',
@@ -737,6 +924,9 @@ const panelist = [
             color: '#FFFFFF',
             cursor: 'pointer',
             fontSize: '1em',
+            fontFamily: 'Libre Baskerville, Georgia, serif',
+            fontWeight: '500',
+            letterSpacing: '0.5px',
             transition: 'background-color 0.3s',
             flex: '1 1 calc(20% - 20px)', 
             maxWidth: 'calc(20% - 20px)',
@@ -754,6 +944,9 @@ const panelist = [
             color: '#FFFFFF',
             cursor: 'pointer',
             fontSize: '1em',
+            fontFamily: 'Libre Baskerville, Georgia, serif',
+            fontWeight: '500',
+            letterSpacing: '0.5px',
             transition: 'background-color 0.3s',
             flex: '1 1 calc(20% - 20px)', 
             maxWidth: 'calc(20% - 20px)',
@@ -771,6 +964,9 @@ const panelist = [
             color: '#FFFFFF',
             cursor: 'pointer',
             fontSize: '1em',
+            fontFamily: 'Libre Baskerville, Georgia, serif',
+            fontWeight: '500',
+            letterSpacing: '0.5px',
             transition: 'background-color 0.3s',
             flex: '1 1 calc(20% - 20px)', 
             maxWidth: 'calc(20% - 20px)',
@@ -788,6 +984,9 @@ const panelist = [
             color: '#FFFFFF',
             cursor: 'pointer',
             fontSize: '1em',
+            fontFamily: 'Libre Baskerville, Georgia, serif',
+            fontWeight: '500',
+            letterSpacing: '0.5px',
             transition: 'background-color 0.3s',
             flex: '1 1 calc(20% - 20px)', 
             maxWidth: 'calc(20% - 20px)',
@@ -805,6 +1004,9 @@ const panelist = [
             color: '#FFFFFF',
             cursor: 'pointer',
             fontSize: '1em',
+            fontFamily: 'Libre Baskerville, Georgia, serif',
+            fontWeight: '500',
+            letterSpacing: '0.5px',
             transition: 'background-color 0.3s',
             flex: '1 1 calc(20% - 20px)', 
             maxWidth: 'calc(20% - 20px)',
@@ -822,6 +1024,9 @@ const panelist = [
             color: '#FFFFFF',
             cursor: 'pointer',
             fontSize: '1em',
+            fontFamily: 'Libre Baskerville, Georgia, serif',
+            fontWeight: '500',
+            letterSpacing: '0.5px',
             transition: 'background-color 0.3s',
             flex: '1 1 calc(20% - 20px)', 
             maxWidth: 'calc(20% - 20px)',
@@ -839,6 +1044,9 @@ const panelist = [
             color: '#FFFFFF',
             cursor: 'pointer',
             fontSize: '1em',
+            fontFamily: 'Libre Baskerville, Georgia, serif',
+            fontWeight: '500',
+            letterSpacing: '0.5px',
             transition: 'background-color 0.3s',
             flex: '1 1 calc(20% - 20px)', 
             maxWidth: 'calc(20% - 20px)',
@@ -850,19 +1058,18 @@ const panelist = [
 
       {/* Render Main Section */}
       <div style={{
-        backgroundColor: 'linear-gradient(135deg, #004AAD, #00B4D8)',
+        background: 'linear-gradient(135deg, rgba(0, 74, 173, 0.4), rgba(0, 180, 216, 0.4))',
         borderRadius: '20px',
-        padding: '20px',
-        boxShadow: '0 10px 20px rgba(0, 0, 0, 0.5)',
+        padding: '30px',
+        boxShadow: '0 10px 20px rgba(0, 0, 0, 0.3)',
         color: '#FFFFFF',
         display: 'flex',
         flexWrap: 'wrap',
         justifyContent: 'center',
-        gap: '20px',
+        gap: '20px'
       }}>
         {renderMainSection()}
       </div>
-
       </div>
     </div>
   );

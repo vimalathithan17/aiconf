@@ -5,11 +5,13 @@ import './App.css'
 import Comitte from './comitte'
 import ThemeSection from './Theme/theme.jsx'
 import TopicsSection from './Topics/Topics.jsx'
+import CallForPapers from './CallForPaper/CallForPaper.jsx'
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div style={{ color: '#FFFFFF' }}>
+      <CallForPapers/>
       <ThemeSection />
       <TopicsSection/>
       <Comitte />

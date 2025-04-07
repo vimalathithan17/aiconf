@@ -67,6 +67,7 @@ import Dr_GRK from '../src/assets/Dr_GRK.jpg';
 import arun from './assets/arun.jpg';
 import mukundh from './assets/mukund.jpg';
 import srikanth from './assets/srikanth.jpg';
+import sudha_R from './assets/sudha_R.png';
 
 function Comitte() {
   useEffect(() => {
@@ -80,7 +81,7 @@ function Comitte() {
 
   const sampleNormalCards = [
     { 
-      name: 'Dr D Indhumathi', 
+      name: 'Dr D Indumathi', 
       designation: "Associate Professor", 
       organization: 'Dept. of Computer Science and Engineering', 
       iconUrl: IndhumathiImage 
@@ -107,7 +108,7 @@ function Comitte() {
 
   const Track1 = [
     {
-        name: 'Dr D Indhumathi',
+        name: 'Dr D Indumathi',
         designation: 'Associate Professor ',   
         organization: 'Dept. of Computer Science and Engineering', 
         iconUrl: IndhumathiImage 
@@ -493,12 +494,22 @@ const panelist = [
       ),
       photoUrl: thiyagarajan,
     },
+    {
+      name: "Dr. Sudha Ramalingam",
+      designation: (
+        <>
+          Director-Research & Innovation<br />Professor - Community Medicine<br />PSG CMMT 
+        </>
+      ),
+      organization:"",
+      photoUrl: sudha_R,
+    },
   ];
 
   // State for carousel
-  const [currentAdvisorySlide, setCurrentAdvisorySlide] = useState(0);
   const cardsPerSlide = 2;
   const totalSlides = Math.ceil(advisoryProfiles.length / cardsPerSlide);
+  const [currentAdvisorySlide, setCurrentAdvisorySlide] = useState(0);
 
   // Auto-scroll effect
   useEffect(() => {
@@ -652,8 +663,17 @@ const panelist = [
       </div>
 
       {/* Institutional Steering Committee */}
-      <div style={{ marginBottom: '60px', display: 'flex', justifyContent: 'center' }}>
-        <div style={{ textAlign: 'center' }}>
+      <div style={{ 
+        marginBottom: '60px', 
+        display: 'flex', 
+        justifyContent: 'center', 
+        width: '100%' 
+      }}>
+        <div style={{ 
+          textAlign: 'center',
+          maxWidth: '400px',
+          width: '100%'
+        }}>
           <h2>INSTITUTION STEERING COMMITTEE</h2>
           <ProfileCard
             name={
@@ -666,6 +686,7 @@ const panelist = [
           />
         </div>
       </div>
+
       <h2 style={{ textAlign: 'center', marginBottom: '25px', fontFamily: 'Montserrat, "Trebuchet MS", Helvetica, sans-serif', letterSpacing: '1px' }}>GENERAL CHAIRS</h2>
       {/* General Chairs */}
       <div style={{ 

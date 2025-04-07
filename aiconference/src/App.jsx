@@ -14,10 +14,10 @@ function App() {
 
   return (
     <div style={{ color: '#FFFFFF' }}>
+      <Comitte/>
       <CallForPapers/>
       <ThemeSection />
       <TopicsSection/>
-      <Comitte />
       <VenueContactSection/>
       <Sponsor/>
       

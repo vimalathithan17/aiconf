@@ -21,6 +21,36 @@ const Reg = () => {
     To submit a paper in CMT (Conference Management Toolkit)
   </li>
 </ul>
+<div style={{ textAlign: 'center', marginTop: '2rem' }}>
+  <a
+    href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2F"
+    style={{
+      padding: '0.75rem 1.5rem',
+      backgroundColor: '#001f54',
+      color: 'white',
+      fontWeight: '500',
+      borderRadius: '0.5rem',
+      textDecoration: 'none',
+      boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+      transition: 'all 0.3s ease',
+      display: 'inline-block'
+    }}
+    onMouseEnter={(e) => {
+      e.target.style.transform = 'scale(1.05)';
+      e.target.style.boxShadow = '0 6px 10px rgba(0, 0, 0, 0.15)';
+      e.target.style.background = 'linear-gradient(to right, #001f54, #023e8a)';
+    }}
+    onMouseLeave={(e) => {
+      e.target.style.transform = 'scale(1)';
+      e.target.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+      e.target.style.background = '#001f54';
+    }}
+  >
+    Submit your paper
+  </a>
+</div>
+
+
 <h2 style={{ fontSize: '2rem', fontWeight: 'bold', textAlign: 'center', marginBottom: '2rem',fontFamily: 'Georgia, serif'}}>IMPORTANT DATES</h2>
 
         <table style={{
@@ -157,23 +187,6 @@ const Reg = () => {
             </tr>
           </tbody>
         </table>
-      </div>
-
-      <div style={{ textAlign: 'center', marginTop: '2rem' }}>
-        <a
-          href="#"
-          style={{
-            padding: '0.75rem 1.5rem',
-            backgroundColor: '#001f54',
-            color: 'white',
-            fontWeight: '500',
-            borderRadius: '0.5rem',
-            textDecoration: 'none',
-            boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
-          }}
-        >
-          Click here for Registration
-        </a>
       </div>
     </div>
   );

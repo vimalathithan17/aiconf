@@ -10,10 +10,13 @@ const Footer = () => {
         padding: "30px 20px",
         fontSize: "1.1rem",
         borderTop: "4px solid #ffffff44",
+        width: "100%", // full-width
         marginTop: "40px",
+        boxSizing: "border-box",
       }}
     >
-      <p>&copy; {new Date().getFullYear()} AI Conference. All rights reserved.</p>
+      <p>&copy; {new Date().getFullYear()} PSG - AI CONSORTIUM . COPY RIGHTS RESERVED</p>
+      <p>Developed By PSG-AI CONSORTIUM</p>
     </footer>
   );
 };

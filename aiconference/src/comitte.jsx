@@ -1264,63 +1264,7 @@ const panelist = [
         .committee-container {
           position: relative;
           z-index: 1;
-        }
-        
-        .committee-background {
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          background: linear-gradient(125deg, #1E3A8A, #152b68, #0c1d4a, #05102b);
-          background-size: 400% 400%;
-          animation: gradientBG 15s ease infinite;
-          z-index: -1;
-        }
-        
-        .committee-background::after {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          background-image: 
-            radial-gradient(circle at 25% 25%, rgba(211, 211, 211, 0.25) 2px, transparent 2px),
-            radial-gradient(circle at 75% 75%, rgba(192, 192, 192, 0.25) 2px, transparent 2px);
-          background-size: 40px 40px;
-          filter: drop-shadow(0 0 3px rgba(192, 192, 192, 0.4));
-          z-index: -1;
-        }
-        
-        .committee-background::before {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          background-image: 
-            radial-gradient(circle at 50% 50%, rgba(220, 220, 220, 0.15) 1px, transparent 2px);
-          background-size: 30px 30px;
-          filter: drop-shadow(0 0 4px rgba(192, 192, 192, 0.3));
-          z-index: -1;
-          animation: twinkle 8s infinite alternate;
-        }
-        
-        @keyframes gradientBG {
-          0% { background-position: 0% 50% }
-          50% { background-position: 100% 50% }
-          100% { background-position: 0% 50% }
-        }
-        
-        @keyframes twinkle {
-          0%, 100% {
-            opacity: 0.5;
-          }
-          50% {
-            opacity: 1;
-          }
+          background-color: #1E3A8A; /* Simple solid background color */
         }
         
         /* Add subtle pulse to containers */

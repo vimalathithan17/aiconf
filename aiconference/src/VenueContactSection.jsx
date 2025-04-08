@@ -1,12 +1,21 @@
 import React from "react";
 
-const containerStyle = {
+// Full-width wrapper
+const sectionWrapperStyle = {
+  width: "100%",
+  margin: 0,
+  padding: 0,
   background: "linear-gradient(135deg, #003B8B, #007FCF)",
-  padding: "40px 20px",
+};
+
+// Inner flex container for the cards
+const containerStyle = {
   display: "flex",
   flexWrap: "wrap",
   justifyContent: "center",
   gap: "30px",
+  padding: "50px 30px",
+  boxSizing: "border-box",
 };
 
 const cardStyle = {
@@ -30,37 +39,39 @@ const mapStyle = {
 
 const VenueContactSection = () => {
   return (
-    <div style={containerStyle}>
-      {/* Venue + Map */}
-      <div style={cardStyle}>
-        <h2 style={{ fontSize: "1.8em", marginBottom: "10px" }}>Event Venue</h2>
-        <p style={{ fontSize: "1.1em" }}>
-          PSG College of Technology, Avinashi Rd, Peelamedu, Coimbatore, Tamil Nadu 641004
-        </p>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.1914993660457!2d77.00282279999999!3d11.0242544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8582f1435fa59%3A0x137d95bfd8909293!2sPSG%20College%20Of%20Technology!5e0!3m2!1sen!2sin!4v1744041410975!5m2!1sen!2sin"
-          style={mapStyle}
-          allowFullScreen=""
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          title="Event Location"
-        ></iframe>
-      </div>
+    <div style={sectionWrapperStyle}>
+      <div style={containerStyle}>
+        {/* Event Venue */}
+        <div style={cardStyle}>
+          <h2 style={{ fontSize: "1.8em", marginBottom: "10px" }}>Event Venue</h2>
+          <p style={{ fontSize: "1.1em" }}>
+            PSG College of Technology, Avinashi Rd, Peelamedu, Coimbatore, Tamil Nadu 641004
+          </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.1914993660457!2d77.00282279999999!3d11.0242544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8582f1435fa59%3A0x137d95bfd8909293!2sPSG%20College%20Of%20Technology!5e0!3m2!1sen!2sin!4v1744041410975!5m2!1sen!2sin"
+            style={mapStyle}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Event Location"
+          ></iframe>
+        </div>
 
-      {/* Contact Us */}
-      <div style={cardStyle}>
-        <h2 style={{ fontSize: "1.8em", marginBottom: "10px" }}>Contact Us</h2>
-        <p style={{ fontSize: "1.1em", marginBottom: "10px" }}>
-          <strong>Address:</strong> PSG College of Technology,<br />
-          Avinashi Road, Peelamedu,<br />
-          Coimbatore - 641004, Tamil Nadu, India.
-        </p>
-        <p style={{ fontSize: "1.1em", marginBottom: "10px" }}>
-          <strong>Phone:</strong> +91 422 2572177
-        </p>
-        <p style={{ fontSize: "1.1em" }}>
-          <strong>Email:</strong> contact@psgtech.edu
-        </p>
+        {/* Contact Us */}
+        <div style={cardStyle}>
+          <h2 style={{ fontSize: "1.8em", marginBottom: "10px" }}>Contact Us</h2>
+          <p style={{ fontSize: "1.1em", marginBottom: "10px" }}>
+            <strong>Address:</strong> PSG College of Technology,<br />
+            Avinashi Road, Peelamedu,<br />
+            Coimbatore - 641004, Tamil Nadu, India.
+          </p>
+          <p style={{ fontSize: "1.1em", marginBottom: "10px" }}>
+            <strong>Phone:</strong> +91 422 2572177
+          </p>
+          <p style={{ fontSize: "1.1em" }}>
+            <strong>Email:</strong> contact@psgtech.edu
+          </p>
+        </div>
       </div>
     </div>
   );

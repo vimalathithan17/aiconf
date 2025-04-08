@@ -1,27 +1,15 @@
 import React from "react";
 
 const Sponsor = () => {
-  const sponsors = [
-    {
-      name: "Sponsor One",
-      image: "/sponsors/sponsor1.png",
-    },
-    {
-      name: "Sponsor Two",
-      image: "/sponsors/sponsor2.png",
-    },
-    {
-      name: "Sponsor Three",
-      image: "/sponsors/sponsor3.png",
-    },
-  ];
-
   return (
     <div
       style={{
+        width: "100%", // Use full container width
         background: "linear-gradient(135deg, #003B8B, #007FCF)",
         padding: "50px 20px",
         textAlign: "center",
+        boxSizing: "border-box", // Include padding in width calculation
+        margin: 0,
       }}
     >
       {/* Section Title */}
@@ -35,53 +23,27 @@ const Sponsor = () => {
         Our Sponsors
       </h2>
 
-      {/* Sponsors Grid */}
-      <div
+      {/* "To be announced" with Hover Effect */}
+      <p
         style={{
-          display: "flex",
-          flexWrap: "wrap",
-          justifyContent: "center",
-          gap: "30px",
+          color: "#fff",
+          fontSize: "1.5rem",
+          fontWeight: "500",
+          marginBottom: "60px",
+          transition: "transform 0.3s ease, textShadow 0.3s ease",
+          cursor: "pointer",
+        }}
+        onMouseOver={(e) => {
+          e.currentTarget.style.transform = "scale(1.05)";
+          e.currentTarget.style.textShadow = "0 0 10px rgba(255, 255, 255, 0.6)";
+        }}
+        onMouseOut={(e) => {
+          e.currentTarget.style.transform = "scale(1)";
+          e.currentTarget.style.textShadow = "none";
         }}
       >
-        {sponsors.map((sponsor, index) => (
-          <div
-            key={index}
-            style={{
-              background: "linear-gradient(135deg, #007FCF, #00B4DB)",
-              borderRadius: "20px",
-              padding: "20px",
-              boxShadow: "0 10px 20px rgba(0, 0, 0, 0.4)",
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              width: "200px",
-              border: "3px solid #c9d6e3",
-            }}
-          >
-            <img
-              src={sponsor.image}
-              alt={sponsor.name}
-              style={{
-                width: "100%",
-                borderRadius: "10px",
-                objectFit: "contain",
-                height: "100px",
-              }}
-            />
-            <p
-              style={{
-                color: "#fff",
-                marginTop: "10px",
-                fontSize: "1rem",
-                fontWeight: "500",
-              }}
-            >
-              {sponsor.name}
-            </p>
-          </div>
-        ))}
-      </div>
+        To be announced
+      </p>
 
       {/* Association Line with Logo */}
       <div
@@ -90,7 +52,6 @@ const Sponsor = () => {
           alignItems: "center",
           justifyContent: "center",
           gap: "15px",
-          marginTop: "50px",
         }}
       >
         <h2

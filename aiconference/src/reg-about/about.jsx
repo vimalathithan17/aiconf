@@ -26,7 +26,8 @@ const SeeMore = ({ children }) => {
 
 const About = () => {
   return (
-    <div style={{ backgroundColor: 'linear-gradient(135deg, rgba(0, 74, 173, 0.4), rgba(0, 180, 216, 0.4))', fontFamily: 'sans-serif' }}>
+    <div style={{ background: 'linear-gradient(135deg, rgba(0, 74, 173, 0.4), rgba(0, 180, 216, 0.4))',
+      borderRadius: '20px',marginTop:'60px' ,fontFamily: 'sans-serif' }}>
       <div style={{ padding: '2rem', lineHeight: '1.8', textAlign: 'left' }}>
         {/* --- PSGCT SECTION --- */}
         <section style={{ marginBottom: '2rem' }}>

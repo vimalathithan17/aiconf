@@ -735,7 +735,7 @@ const panelist = [
       <div style={{ marginBottom: '60px' }}>
         <h2 style={{ textAlign: 'center', marginBottom: '25px', fontFamily: 'Montserrat, "Trebuchet MS", Helvetica, sans-serif', letterSpacing: '1px' }}>ORGANIZING CHAIRS</h2>
         <div style={{ 
-          background: 'linear-gradient(135deg, rgba(116, 160, 218, 0.4rgba(165, 212, 222, 0.4).4))',
+           background: 'linear-gradient(135deg, rgba(0, 74, 173, 0.4), rgba(0, 180, 216, 0.4))',
           borderRadius: '20px',
           padding: '30px',
           boxShadow: '0 10px 20px rgba(0, 0, 0, 0.3)'

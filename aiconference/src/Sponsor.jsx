@@ -25,11 +25,13 @@ const Sponsor = () => {
       <div
         style={{
           width: "100%",
-          background: "linear-gradient(135deg, #003B8B, #007FCF)",
+          background: 'linear-gradient(135deg, rgba(0, 74, 173, 0.4), rgba(0, 180, 216, 0.4))',
           padding: "50px 20px",
           textAlign: "center",
           boxSizing: "border-box",
           margin: 0,
+          marginTop: "60px",
+          marginBottom: "60px",
           borderRadius: "20px", // 👈 Curved edges here
         }}
       >

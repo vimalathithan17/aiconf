@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import ReactCardFlip from 'react-card-flip';
 import { 
   FaAtom, FaIndustry, FaRocket, FaChevronDown
@@ -29,6 +29,7 @@ const TopicCard = ({ title, description, topics, icon }) => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [contentHeight, setContentHeight] = useState(0);
   const [containerHeight, setContainerHeight] = useState(0);
+  const contentRef = useRef(null);
 
   const handleClick = (e) => {
     e.preventDefault();
@@ -37,9 +38,15 @@ const TopicCard = ({ title, description, topics, icon }) => {
 
   const handleScroll = (e) => {
     setScrollPosition(e.target.scrollTop);
-    setContentHeight(e.target.scrollHeight);
-    setContainerHeight(e.target.clientHeight);
   };
+
+  // Use useEffect to calculate dimensions when component mounts or flips
+  useEffect(() => {
+    if (isFlipped && contentRef.current) {
+      setContentHeight(contentRef.current.scrollHeight);
+      setContainerHeight(contentRef.current.clientHeight);
+    }
+  }, [isFlipped]);
 
   // Determine if there's more content to scroll down to
   const hasMoreContent = contentHeight > containerHeight && scrollPosition < contentHeight - containerHeight;
@@ -83,6 +90,7 @@ const TopicCard = ({ title, description, topics, icon }) => {
             marginBottom: '8px'
           }}>{description}</h4>
           <div 
+            ref={contentRef}
             style={{ 
               overflowY: 'auto', 
               flex: 1,
@@ -105,8 +113,8 @@ const TopicCard = ({ title, description, topics, icon }) => {
             </ul>
           </div>
           
-          {/* Only show down arrow when there's more content */}
-          {hasMoreContent && (
+          {/* Show down arrow when content exceeds container height */}
+          {(contentHeight > containerHeight) && (
             <div style={{
               position: 'absolute',
               bottom: '10px',
@@ -115,16 +123,20 @@ const TopicCard = ({ title, description, topics, icon }) => {
               color: 'rgba(255, 255, 255, 0.8)',
               textAlign: 'center',
               fontSize: '1.2em',
-              pointerEvents: 'none'
+              pointerEvents: 'none',
+              animation: hasMoreContent ? 'none' : 'fadeOut 0.5s forwards'
             }}>
               <FaChevronDown />
             </div>
           )}
 
-          {/* Add CSS for scrollbar hiding */}
+          {/* Add CSS for scrollbar hiding and arrow animation */}
           <style>{`
             div::-webkit-scrollbar {
               display: none;
+            }
+            @keyframes fadeOut {
+              to { opacity: 0; }
             }
           `}</style>
         </div>

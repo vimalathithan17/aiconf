@@ -10,7 +10,7 @@ const ThemeSection = () => {
           marginBottom: '30px',
           marginTop: '0',
       }}>THEME</h2><section style={{
-        marginBottom: '60px', 
+        marginBottom: '80px', 
         background: 'linear-gradient(135deg, rgba(0, 74, 173, 0.4), rgba(0, 180, 216, 0.4))',
         borderRadius: '20px',
         padding: '30px',

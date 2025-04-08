@@ -543,7 +543,7 @@ const panelist = [
               name="Dr Vijayan K Asari"
               designation={
                 <>
-                  Professor & Director , Vision Lab <br /> Department of Electrical and Computer Engineering
+                  Professor & Director <br />Vision Lab <br /> Department of Electrical and Computer Engineering
                 </>
               }
               organization="University of Dayton, USA"

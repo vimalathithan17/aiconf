@@ -19,12 +19,11 @@ function App() {
       <About/>
       <Comitte/>
       <CallForPapers/>
-      <TopicsSection/>
       <ThemeSection />
+      <TopicsSection/>
       <Reg/>
       <VenueContactSection/>
       <Sponsor/>
-      
       <Footer/>
     </div>
   );

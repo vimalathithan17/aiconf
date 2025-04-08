@@ -92,8 +92,6 @@ const About = () => {
             <div style={{ flex: '1.5' }}>
               <p>
                 The growth of Artificial Intelligence must be guided by strong ethical principles and Responsible AI, ensuring that its development promotes fairness, transparency, and societal well-being.
-              </p>
-              <p>
                 The AI Consortium at PSG College of Technology, inspired by the vision of EPIQAI – Empowering Ethics, Progress, Innovation & Quality in AI, serves as a dynamic platform for fostering AI research, innovation, and industry collaboration. AICTE has declared 2025 as the Year of AI, emphasizing its integration into higher education to prepare students for an AI-driven world.
               </p>
 
@@ -146,7 +144,7 @@ const About = () => {
             </div>
             <div style={{ flex: '1.5' }}>
               <p>
-                The PSG Center for Academic Research and Excellence was founded in October, 2015 by the PSG & Sons' Charities Trust with a mission to promote teaching excellence in all the colleges under the Trust. Toward this end, CARE will encourage the use of learner-centric pedagogical practices that facilitate effective learning and will foster dialogue and reflection on effective teaching through workshops, seminars. Dr. R. Rudramoorthy is the current Director of PSG CARE.
+                The PSG Center for Academic Research and Excellence was founded in October, 2015 by the PSG & Sons' Charities Trust with a mission to promote teaching excellence in all the colleges under the Trust. Toward this end, CARE will encourage the use of learner-centric pedagogical practices that facilitate effective learning and will foster dialogue and reflection on effective teaching through workshops, seminars. Dr. R. Rudramoorthy is the Director of PSG CARE.
               </p>
               <p>
                 The center also focuses on creating and sustaining effective faculty student relationships and aims to pursue its mission.

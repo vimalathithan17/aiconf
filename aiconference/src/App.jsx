@@ -90,6 +90,7 @@ function App() {
         <div id="venue-contact"><VenueContactSection /></div>
         <div id="sponsors"><Sponsor /></div>
         <div id="welcome"><WelcomeCardSection /></div>
+        <Footer/>
       </div>
     </>
   );

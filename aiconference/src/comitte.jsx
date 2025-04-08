@@ -68,6 +68,7 @@ import arun from './assets/arun.jpg';
 import mukundh from './assets/mukund.jpg';
 import srikanth from './assets/srikanth.jpg';
 import sudha_R from './assets/sudha_R.png';
+import Dr_Rekha from './assets/Dr_Rekha.jpg';
 
 function Comitte() {
   useEffect(() => {
@@ -90,7 +91,7 @@ function Comitte() {
       name: 'Dr R Rekha', 
       designation: 'Associate Professor', 
       organization: 'Dept. of Information Technology', 
-      iconUrl: RekhaImage 
+      iconUrl: Dr_Rekha 
     },
     { 
       name: 'Dr K Sathiyapriya', 
@@ -117,7 +118,7 @@ function Comitte() {
         name: 'Dr R Rekha', 
       designation: 'Associate Professor', 
       organization: 'Dept. of Information Technology', 
-      iconUrl: RekhaImage 
+      iconUrl: Dr_Rekha
     }
   ];
   const Track2 = [
@@ -543,7 +544,7 @@ const panelist = [
               name="Dr Vijayan K Asari"
               designation={
                 <>
-                  Professor & Director , Vision Lab <br /> Department of Electrical and Computer Engineering
+                  Professor & Director <br />Vision Lab <br /> Department of Electrical and Computer Engineering
                 </>
               }
               organization="University of Dayton, USA"
@@ -734,7 +735,7 @@ const panelist = [
       <div style={{ marginBottom: '60px' }}>
         <h2 style={{ textAlign: 'center', marginBottom: '25px', fontFamily: 'Montserrat, "Trebuchet MS", Helvetica, sans-serif', letterSpacing: '1px' }}>ORGANIZING CHAIRS</h2>
         <div style={{ 
-          background: 'linear-gradient(135deg, rgba(116, 160, 218, 0.4rgba(165, 212, 222, 0.4).4))',
+           background: 'linear-gradient(135deg, rgba(0, 74, 173, 0.4), rgba(0, 180, 216, 0.4))',
           borderRadius: '20px',
           padding: '30px',
           boxShadow: '0 10px 20px rgba(0, 0, 0, 0.3)'

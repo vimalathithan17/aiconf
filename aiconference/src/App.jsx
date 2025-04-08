@@ -11,10 +11,27 @@ import VenueContactSection from './VenueContactSection.jsx'
 import Footer from './Footer.jsx'
 import About from './reg-about/about.jsx'
 import Reg from './reg-about/reg.jsx'
+import MainContent from './components/MainContent.jsx'
+import {
+  AppContainer,
+  InfoSection,
+  InfoContent,
+  CollegeTitle,
+  Address,
+  ConsortiumTitle,
+  SliderContainer,
+  Title,
+  Line
+} from './components/App.styles.jsx';
+
 function App() {
   const [count, setCount] = useState(0);
 
   return (
+    <>
+    <div className="mainctnt">
+      <MainContent/>
+    </div>
     <div style={{ color: '#FFFFFF' }}>
       <About/>
       <Comitte/>
@@ -24,9 +41,9 @@ function App() {
       <Reg/>
       <VenueContactSection/>
       <Sponsor/>
-      
       <Footer/>
     </div>
+    </>
   );
 }
 

@@ -19,8 +19,8 @@ function App() {
       <About/>
       <Comitte/>
       <CallForPapers/>
-      <ThemeSection />
       <TopicsSection/>
+      <ThemeSection />
       <Reg/>
       <VenueContactSection/>
       <Sponsor/>

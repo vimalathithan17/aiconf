@@ -15,8 +15,8 @@ const Footer = () => {
         boxSizing: "border-box",
       }}
     >
-      <p>&copy; {new Date().getFullYear()} PSG - AI CONSORTIUM . COPY RIGHTS RESERVED</p>
-      <p>Developed By PSG-AI CONSORTIUM</p>
+      <p>&copy; {new Date().getFullYear()} Developed By PSG-AI CONSORTIUM</p>
+      <p></p>
     </footer>
   );
 };

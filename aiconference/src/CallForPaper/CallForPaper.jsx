@@ -106,47 +106,8 @@ return (
                         }}>
                                 Additionally, interdisciplinary and cross-cutting research that integrates smart systems, computing, and communication technologies are encouraged. The conference aims to foster collaboration, innovation, and knowledge dissemination in the field of smart systems and integrated computing and communication.
                         </p>
-                </section><div
-                        style={{
-                            marginTop: '60px',
-                                marginBottom: '60px',
-                                background: 'linear-gradient(135deg, rgba(0, 74, 173, 0.4), rgba(0, 180, 216, 0.4))',
-                                borderRadius: '20px',
-                                padding: '30px',
-                                boxShadow: '0 10px 20px rgba(0, 0, 0, 0.3)',
-                                maxWidth: '1200px',
-                        }}>
-                        <section
-                                style={{
-                                        maxWidth: '900px',
-                                        margin: '0 auto',
-                                        textAlign: 'center',
-                                }}
-                        >
-                                <h2
-                                        style={{
-                                                fontFamily: 'Libre Baskerville, Georgia, serif',
-                                                fontSize: '2em',
-                                                fontWeight: 'bold',
-                                                marginBottom: '30px',
-                                        }}
-                                >
-                                        Conference Tracks
-                                </h2>
-                                <div
-                                        style={{
-                                                display: 'flex',
-                                                flexWrap: 'wrap',
-                                                justifyContent: 'center',
-                                                gap: '30px',
-                                        }}
-                                >
-                                        {tracks.map((track, index) => (
-                                                <TrackBox key={index} title={track.title} description={track.description} />
-                                        ))}
-                                </div>
-                        </section>
-                </div></>
+                </section>
+                </>
 );
 };
 

@@ -9,8 +9,8 @@ import CallForPapers from './CallForPaper/CallForPaper.jsx'
 import Sponsor from './Sponsor.jsx'
 import VenueContactSection from './VenueContactSection.jsx'
 import Footer from './Footer.jsx'
-import Reg from './reg-about/reg.jsx'
 import About from './reg-about/about.jsx'
+import Reg from './reg-about/reg.jsx'
 function App() {
   const [count, setCount] = useState(0);
 

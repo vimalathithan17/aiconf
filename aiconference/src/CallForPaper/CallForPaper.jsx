@@ -94,17 +94,7 @@ return (
                                 textAlign: 'justify-center',
                                 textJustify: 'inter-word'
                         }}>
-                                The scope of the International Conference on Smart Systems for Integrated Computing and Communication (ICSSICC-25) encompasses a broad range of topics related to smart systems, integrated computing, and communication technologies. The conference welcomes original research papers, review articles, case studies, and technical contributions addressing these topics and their applications in various domains.
-                        </p>
-                        <p style={{
-                                fontSize: '1.1em',
-                                lineHeight: '1.6',
-                                maxWidth: '900px',
-                                margin: '0 auto',
-                                textAlign: 'justify-center',
-                                textJustify: 'inter-word'
-                        }}>
-                                Additionally, interdisciplinary and cross-cutting research that integrates smart systems, computing, and communication technologies are encouraged. The conference aims to foster collaboration, innovation, and knowledge dissemination in the field of smart systems and integrated computing and communication.
+                                We invite researchers, academicians, industry professionals, and practitioners to submit original papers on the foundations, applications, and future directions of Artificial Intelligence. The conference welcomes research articles, reviews, and technical contributions across various fields. Submissions spanning the full spectrum of AI, particularly those that bridge disciplines or explore emerging areas, are especially encouraged.
                         </p>
                 </section>
                 </>

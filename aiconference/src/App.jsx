@@ -11,6 +11,7 @@ import VenueContactSection from './VenueContactSection.jsx'
 import Footer from './Footer.jsx'
 import About from './reg-about/about.jsx'
 import Reg from './reg-about/reg.jsx'
+import WelcomeCardSection from './cbeplaces.jsx'
 import MainContent from './components/MainContent.jsx'
 import {
   AppContainer,
@@ -41,6 +42,7 @@ function App() {
       <Reg/>
       <VenueContactSection/>
       <Sponsor/>
+      <WelcomeCardSection/>
       <Footer/>
     </div>
     </>

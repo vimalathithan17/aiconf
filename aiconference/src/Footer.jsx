@@ -4,7 +4,8 @@ const Footer = () => {
   return (
     <footer
       style={{
-        background: "linear-gradient(135deg, #003B8B, #007FCF)",
+        background: 'linear-gradient(135deg, rgba(0, 74, 173, 0.4), rgba(0, 180, 216, 0.4))',
+        borderRadius: "20px",
         color: "#ffffff",
         textAlign: "center",
         padding: "30px 20px",

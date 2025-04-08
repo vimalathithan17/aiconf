@@ -29,7 +29,7 @@ const VenueContactSection = () => {
           width: "100%",
           margin: 0,
           padding: 0,
-          background: "linear-gradient(135deg, #003B8B, #007FCF)",
+          background: 'linear-gradient(135deg, rgba(0, 74, 173, 0.4), rgba(0, 180, 216, 0.4))',
           borderRadius: "20px", // 👈 Added curved edges
         }}
       >

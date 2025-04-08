@@ -15,7 +15,7 @@ const NormalCard = ({ name, designation, organization, iconUrl }) => {
       transition: 'transform 0.3s, box-shadow 0.3s',
     }}
     onMouseEnter={(e) => {
-      e.currentTarget.style.transform = 'scale(1.05)';
+      e.currentTarget.style.transform = 'scale(1.03)';
       e.currentTarget.style.boxShadow = '0 15px 30px rgba(0, 0, 0, 0.7)';
     }}
     onMouseLeave={(e) => {
@@ -45,25 +45,27 @@ const NormalCard = ({ name, designation, organization, iconUrl }) => {
           />
         </div>
       )}
-      <h3 style={{
+      <h2 style={{
         margin: '15px 0 10px 0',
-        fontFamily: 'Montserrat, "Trebuchet MS", Helvetica, sans-serif',
-        fontWeight: '700',
+        fontFamily: '"Palatino Linotype", "Book Antiqua", Palatino, serif',
+        fontWeight: '1000',
         letterSpacing: '0.4px',
         fontSize: '1.2em',
         color: '#FFFFFF',
-      }}>{name}</h3>
-      <p style={{
+      }}>{name}</h2>
+      <h5 style={{
         margin: '4.5px 0',
         fontSize: '1em',
-        fontFamily: 'Segoe UI, Arial, sans-serif'
-      }}>{designation}</p>
+        fontFamily: 'Georgia, Times, "Times New Roman", serif',
+        fontWeight: '500',
+      }}>{designation}</h5>
       {organization && (
-        <p style={{
+        <h6 style={{
           margin: '10px 0 0 0',
-          fontSize: '0.9em',
-          fontFamily: 'Segoe UI, Arial, sans-serif'
-        }}>{organization}</p>
+          fontSize: '1.0em',
+          fontFamily: 'Georgia, Times, "Times New Roman", serif',
+          fontWeight: '500',
+        }}>{organization}</h6>
       )}
     </div>
   );

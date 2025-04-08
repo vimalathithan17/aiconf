@@ -40,3 +40,14 @@
 .read-the-docs {
   color: #888;
 }
+
+/* ✅ Hover effect for each section wrapper */
+.hover-section {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.hover-section:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}

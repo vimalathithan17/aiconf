@@ -58,7 +58,16 @@ import shelly from './assets/shelly.png';
 import sonali from './assets/sonali.jpg';
 import badri from './assets/badri.jpg';
 import vijaykumar from './assets/vijayakumar.jpg';
-import thiyagrarajan from './assets/thiyagarajan.jpg';
+import thiyagarajan from './assets/thiyagarajan.jpg';
+import siddarth from './assets/siddarth.jpg';
+import jorg from './assets/jorg.png';
+import amar from './assets/amar.jpg';
+import srinivas from './assets/srinivas.png';
+import Dr_GRK from '../src/assets/Dr_GRK.jpg';
+import arun from './assets/arun.jpg';
+import mukundh from './assets/mukund.jpg';
+import srikanth from './assets/srikanth.jpg';
+import sudha_R from './assets/sudha_R.png';
 
 function Comitte() {
   useEffect(() => {
@@ -72,7 +81,7 @@ function Comitte() {
 
   const sampleNormalCards = [
     { 
-      name: 'Dr D Indhumathi', 
+      name: 'Dr D Indumathi', 
       designation: "Associate Professor", 
       organization: 'Dept. of Computer Science and Engineering', 
       iconUrl: IndhumathiImage 
@@ -99,7 +108,7 @@ function Comitte() {
 
   const Track1 = [
     {
-        name: 'Dr D Indhumathi',
+        name: 'Dr D Indumathi',
         designation: 'Associate Professor ',   
         organization: 'Dept. of Computer Science and Engineering', 
         iconUrl: IndhumathiImage 
@@ -483,14 +492,24 @@ const panelist = [
           Continental Technical Center<br />India.
         </>
       ),
-      photoUrl: thiyagrarajan,
+      photoUrl: thiyagarajan,
+    },
+    {
+      name: "Dr. Sudha Ramalingam",
+      designation: (
+        <>
+          Director-Research & Innovation<br />Professor - Community Medicine<br />PSG CMMT 
+        </>
+      ),
+      organization:"",
+      photoUrl: sudha_R,
     },
   ];
 
   // State for carousel
-  const [currentAdvisorySlide, setCurrentAdvisorySlide] = useState(0);
   const cardsPerSlide = 2;
   const totalSlides = Math.ceil(advisoryProfiles.length / cardsPerSlide);
+  const [currentAdvisorySlide, setCurrentAdvisorySlide] = useState(0);
 
   // Auto-scroll effect
   useEffect(() => {
@@ -600,18 +619,21 @@ const panelist = [
  
 
   return (
-    <div style={{ padding: '40px', fontFamily: 'Georgia, serif', color: '#FFFFFF' }}>
+    <div className="committee-container" style={{ padding: '40px', fontFamily: 'Georgia, serif', color: '#FFFFFF', position: 'relative', width: '100vw', marginLeft: 'calc(-50vw + 50%)', boxSizing: 'border-box' }}>
+      <div className="committee-background"></div>
+      <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
       <h2 style={{
         textAlign: 'center',
         fontSize: '2.5em',
         marginBottom: '40px',
         color: '#FFFFFF',
+        position: 'relative',
       }}>ORGANIZING COMMITTEE</h2>
 
       {/* Chief Patron and Patron */}
       <div style={{ display: 'flex', justifyContent: 'center', gap: '100px', flexWrap: 'wrap', marginBottom: '60px' }}>
         <div>
-          <h3 style={{ textAlign: 'center' }}>CHIEF PATRON</h3>
+          <h2 style={{ textAlign: 'center' }}>CHIEF PATRON</h2>
           <ProfileCard
             name="Shri L Gopalakrishnan"
             designation={
@@ -626,7 +648,7 @@ const panelist = [
       </div>
       <div style={{ display: 'flex', justifyContent: 'center', gap: '100px', flexWrap: 'wrap', marginBottom: '60px' }}>
         <div>
-          <h3 style={{ textAlign: 'center'}}>PATRON</h3>
+          <h2 style={{ textAlign: 'center'}}>PATRON</h2>
           <ProfileCard
             name="Dr K Prakasan"
             designation={
@@ -641,13 +663,22 @@ const panelist = [
       </div>
 
       {/* Institutional Steering Committee */}
-      <div style={{ marginBottom: '60px', display: 'flex', justifyContent: 'center' }}>
-        <div style={{ textAlign: 'center' }}>
-          <h3>INSTITUTION STEERING COMMITTEE</h3>
+      <div style={{ 
+        marginBottom: '60px', 
+        display: 'flex', 
+        justifyContent: 'center', 
+        width: '100%' 
+      }}>
+        <div style={{ 
+          textAlign: 'center',
+          maxWidth: '400px',
+          width: '100%'
+        }}>
+          <h2>INSTITUTION STEERING COMMITTEE</h2>
           <ProfileCard
             name={
               <>
-                Deans and Head of the Departments
+                Director - PSG CARE ,<br />Deans and <br />Head of the Departments
               </>
             }
             designation=""
@@ -655,7 +686,8 @@ const panelist = [
           />
         </div>
       </div>
-      <h3 style={{ textAlign: 'center', marginBottom: '25px', fontFamily: 'Montserrat, "Trebuchet MS", Helvetica, sans-serif', letterSpacing: '1px' }}>GENERAL CHAIRS</h3>
+
+      <h2 style={{ textAlign: 'center', marginBottom: '25px', fontFamily: 'Montserrat, "Trebuchet MS", Helvetica, sans-serif', letterSpacing: '1px' }}>GENERAL CHAIRS</h2>
       {/* General Chairs */}
       <div style={{ 
         marginBottom: '60px', 
@@ -674,7 +706,7 @@ const panelist = [
                 </>
               }
               organization=""
-              photoUrl={GRKImage}
+              photoUrl={Dr_GRK}
             />
           </div>
           <div>
@@ -694,7 +726,7 @@ const panelist = [
 
       {/* Sample Normal Cards Section */}
       <div style={{ marginBottom: '60px' }}>
-        <h3 style={{ textAlign: 'center', marginBottom: '25px', fontFamily: 'Montserrat, "Trebuchet MS", Helvetica, sans-serif', letterSpacing: '1px' }}>ORGANIZING CHAIRS</h3>
+        <h2 style={{ textAlign: 'center', marginBottom: '25px', fontFamily: 'Montserrat, "Trebuchet MS", Helvetica, sans-serif', letterSpacing: '1px' }}>ORGANIZING CHAIRS</h2>
         <div style={{ 
           background: 'linear-gradient(135deg, rgba(0, 74, 173, 0.4), rgba(0, 180, 216, 0.4))',
           borderRadius: '20px',
@@ -704,7 +736,7 @@ const panelist = [
           <NormalCardGrid cards={sampleNormalCards} />
         </div>
       </div>
-      <h3 style={{ textAlign: 'center', marginBottom: '25px', fontFamily: 'Montserrat, "Trebuchet MS", Helvetica, sans-serif', letterSpacing: '1px' }}>ADVISORY BOARD</h3>
+      <h2 style={{ textAlign: 'center', marginBottom: '25px', fontFamily: 'Montserrat, "Trebuchet MS", Helvetica, sans-serif', letterSpacing: '1px' }}>ADVISORY BOARD</h2>
       {/* Advisory Board Carousel */}
       <div style={{ 
         marginBottom: '60px', 
@@ -764,7 +796,7 @@ const panelist = [
 
       {/* Track Chairs Section */}
       <div style={{ marginTop: '60px' }}>
-        <h3 style={{ textAlign: 'center', marginBottom: '25px', fontFamily: 'Montserrat, "Trebuchet MS", Helvetica, sans-serif', letterSpacing: '1px' }}>TRACK CHAIRS</h3>
+        <h2 style={{ textAlign: 'center', marginBottom: '25px', fontFamily: 'Montserrat, "Trebuchet MS", Helvetica, sans-serif', letterSpacing: '1px' }}>TRACK CHAIRS</h2>
         {/* Track Tabs */}
         <div style={{
           display: 'flex',
@@ -1070,8 +1102,244 @@ const panelist = [
       }}>
         {renderMainSection()}
       </div>
+      <br />
+      <br />
+      {/* Keynote Speakers Section */}
+      <h2 style={{ 
+        textAlign: 'center', 
+        marginTop: '60px', 
+        marginBottom: '25px',
+        fontFamily: 'Montserrat, "Trebuchet MS", Helvetica, sans-serif', 
+        letterSpacing: '1px',
+        fontSize: '1.8em'
+      }}>KEYNOTE SPEAKERS</h2>
+      
+      <div style={{ 
+        background: 'linear-gradient(135deg, rgba(0, 74, 173, 0.4), rgba(0, 180, 216, 0.4))',
+        borderRadius: '20px',
+        padding: '30px',
+        boxShadow: '0 10px 20px rgba(0, 0, 0, 0.3)',
+        marginBottom: '60px'
+      }}>
+        <div style={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          justifyContent: 'center',
+          gap: '40px'
+        }}>
+          {/* First Row */}
+          <div style={{
+            margin: '10px',
+            flex: '0 0 calc(50% - 60px)', // Two cards per row with gap consideration
+            maxWidth: 'calc(50% - 60px)',
+            display: 'flex',
+            justifyContent: 'center'
+          }}>
+            <ProfileCard
+              name="Mr. Siddarth Narayanan"
+              designation={
+                <>
+                  Strategic Alliances at Office of<br /> Principal Scientific Adviser <br />Government of India <br />National Mission Team member<br />Founding Director<br />Bharat Tech Foundation
+                </>
+              }
+              organization=""
+              photoUrl={siddarth} // Use the imported siddarth image
+            />
+          </div>
+          <div style={{
+            margin: '10px',
+            flex: '0 0 calc(50% - 60px)',
+            maxWidth: 'calc(50% - 60px)',
+            display: 'flex',
+            justifyContent: 'center'
+          }}>
+            <ProfileCard
+              name="Dr Amar Aggoun"
+              designation={
+                <>
+                  Professor of Visual Computing &<br />Head of Computer Science <br />Leeds Bekket University
+                </>
+              }
+              organization="London, England, UK"
+              photoUrl={amar} // Use the imported amar image
+            />
+          </div>
+          
+          {/* Second Row */}
+          <div style={{
+            margin: '10px',
+            flex: '0 0 calc(50% - 60px)',
+            maxWidth: 'calc(50% - 60px)',
+            display: 'flex',
+            justifyContent: 'center'
+          }}>
+            <ProfileCard
+              name="Dr Jorg Frochte"
+              designation={
+                <>
+                  Professor for Applied Computer Science <br />Interdisciplinary Institute for Applied AI and Data Science <br />Bochum University of Applied Sciences
+                </>
+              }
+              organization=""
+              photoUrl={jorg} // Use the imported jorg image
+            />
+          </div>
+          <div style={{
+            margin: '10px',
+            flex: '0 0 calc(50% - 60px)',
+            maxWidth: 'calc(50% - 60px)',
+            display: 'flex',
+            justifyContent: 'center'
+          }}>
+            <ProfileCard
+              name="Dr Srinivas Padmanabhuni"
+              designation={
+                <>
+                  IIIT Luknow,<br />Marax AI, INC <br />AI Advisor
+                </>
+              }
+              organization=""
+              photoUrl={srinivas} // Use the imported srinivas image
+            />
+          </div>
+          
+          {/* Third Row */}
+          <div style={{
+            margin: '10px',
+            flex: '0 0 calc(50% - 60px)',
+            maxWidth: 'calc(50% - 60px)',
+            display: 'flex',
+            justifyContent: 'center'
+          }}>
+            <ProfileCard
+              name="Mr. Mukund Bhoovaraghavan"
+              designation={<>
+                 Principal Group Engineering Manager <br /> Microdoft Hydrabad
+                </>}
+              organization=""
+              photoUrl={mukundh}
+            />
+          </div>
+          <div style={{
+            margin: '10px',
+            flex: '0 0 calc(50% - 60px)',
+            maxWidth: 'calc(50% - 60px)',
+            display: 'flex',
+            justifyContent: 'center'
+          }}>
+            <ProfileCard
+              name="Mr Srikanth Subramanian"
+              designation={<>
+                 Vice President , Engineering<br />Salesforce , Bengaluru
+              </>}
+              organization=""
+              photoUrl={srikanth}
+            />
+          </div>
+          
+          {/* Last Row - Single Card */}
+          <div style={{
+            margin: '10px',
+            flex: '0 0 calc(50% - 60px)',
+            maxWidth: 'calc(50% - 60px)',
+            display: 'flex',
+            justifyContent: 'center'
+          }}>
+            <ProfileCard
+              name="Dr Arun Rajkumar"
+              designation={<>
+                Assistant Professor <br />Dept. of Data Science and AI <br />Centre for Responsible AI <br />IIT Madras
+              </>}
+              organization=""
+              photoUrl={arun}
+            />
+          </div>
+        </div>
       </div>
-    </div>
+
+      </div>
+    
+      {/* Add CSS for the animated background */}
+      <style jsx global>{`
+        .committee-container {
+          position: relative;
+          z-index: 1;
+        }
+        
+        .committee-background {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: linear-gradient(125deg, #1E3A8A, #152b68, #0c1d4a, #05102b);
+          background-size: 400% 400%;
+          animation: gradientBG 15s ease infinite;
+          z-index: -1;
+        }
+        
+        .committee-background::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-image: 
+            radial-gradient(circle at 25% 25%, rgba(211, 211, 211, 0.25) 2px, transparent 2px),
+            radial-gradient(circle at 75% 75%, rgba(192, 192, 192, 0.25) 2px, transparent 2px);
+          background-size: 40px 40px;
+          filter: drop-shadow(0 0 3px rgba(192, 192, 192, 0.4));
+          z-index: -1;
+        }
+        
+        .committee-background::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-image: 
+            radial-gradient(circle at 50% 50%, rgba(220, 220, 220, 0.15) 1px, transparent 2px);
+          background-size: 30px 30px;
+          filter: drop-shadow(0 0 4px rgba(192, 192, 192, 0.3));
+          z-index: -1;
+          animation: twinkle 8s infinite alternate;
+        }
+        
+        @keyframes gradientBG {
+          0% { background-position: 0% 50% }
+          50% { background-position: 100% 50% }
+          100% { background-position: 0% 50% }
+        }
+        
+        @keyframes twinkle {
+          0%, 100% {
+            opacity: 0.5;
+          }
+          50% {
+            opacity: 1;
+          }
+        }
+        
+        /* Add subtle pulse to containers */
+        [style*="background: linear-gradient(135deg, rgba(0, 74, 173, 0.4), rgba(0, 180, 216, 0.4))"] {
+          animation: pulse 6s infinite alternate;
+        }
+        
+        @keyframes pulse {
+          0% { 
+            background: linear-gradient(135deg, rgba(0, 74, 173, 0.4), rgba(0, 180, 216, 0.4));
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+          }
+          100% { 
+            background: linear-gradient(135deg, rgba(0, 95, 200, 0.45), rgba(0, 200, 230, 0.45));
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4), 0 0 15px rgba(0, 180, 216, 0.2);
+          }
+        }
+      `}</style>
+      </div></div>
   );
 }
 

@@ -7,12 +7,17 @@ const WelcomeCardSection = () => {
   const speedRef = useRef(0.5); // Lower value for smoother motion
 
   const images = [
+    { name: "PSG GRD Museum", img: "/images/grd.jpg" },
     { name: "Marudhamalai Temple", img: "/images/marudhamalai.png" },
     { name: "Brookefields Mall", img: "/images/brookefields.png" },
     { name: "Isha Yoga Center", img: "/images/isha.png" },
     { name: "Gass Forest Museum", img: "/images/gass.png" },
     { name: "Prozone Mall", img: "/images/prozone.png" },
     { name: "GD Car Museum", img: "/images/gd.png" },
+    { name: "Ukkadam Lake Spot", img: "/images/ilovekovai.jpg" },
+    { name: "Thiruvalluvar Statue", img: "/images/thiruvalluvar.jpg" },
+    { name: "Clock Tower", img: "/images/town.jpg" },
+    { name: "Vallankulam Boat House", img:"/images/boat.jpg"}
   ];
 
   const repeatedImages = [...images, ...images]; // Duplicate for seamless scroll

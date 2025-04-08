@@ -349,7 +349,7 @@ const Reg = () => {
 
         <div style={{ textAlign: 'center', marginTop: '2rem' }}>
           <a
-            href="#"
+            href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2F"
             style={{
               padding: '0.75rem 1.5rem',
               backgroundColor: '#001f54',
@@ -365,7 +365,7 @@ const Reg = () => {
             onMouseOver={(e) => e.target.style.backgroundColor = '#023e8a'}
             onMouseOut={(e) => e.target.style.backgroundColor = '#001f54'}
           >
-            Click here for Registration
+            Submit Your Paper
           </a>
         </div>
 >>>>>>> ea4ff321a7b2f17945b4744f3261edac45eaa9c0

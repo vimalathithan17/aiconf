@@ -45,7 +45,7 @@ const Reg = () => {
           <thead>
             <tr style={{ background: 'linear-gradient(to right, #001f54, #023e8a)', color: 'white' }}>
               <th style={{ padding: '1rem', border: '3px solid white', textAlign: 'center' }}>CATEGORY</th>
-              <th style={{ padding: '1rem', border: '3px solid white', backgroundColor: '#90ee90', textAlign: 'center' }}>INDIAN DELEGATES</th>
+              <th style={{ padding: '1rem', border: '3px solid white',  textAlign: 'center' }}>INDIAN DELEGATES</th>
               <th style={{ padding: '1rem', border: '3px solid white', textAlign: 'center' }}>FOREIGN DELEGATES</th>
             </tr>
           </thead>

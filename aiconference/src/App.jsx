@@ -9,15 +9,19 @@ import CallForPapers from './CallForPaper/CallForPaper.jsx'
 import Sponsor from './Sponsor.jsx'
 import VenueContactSection from './VenueContactSection.jsx'
 import Footer from './Footer.jsx'
+import About from './reg-about/about.jsx'
+import Reg from './reg-about/reg.jsx'
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div style={{ color: '#FFFFFF' }}>
+      <About/>
       <Comitte/>
       <CallForPapers/>
       <ThemeSection />
       <TopicsSection/>
+      <Reg/>
       <VenueContactSection/>
       <Sponsor/>
       

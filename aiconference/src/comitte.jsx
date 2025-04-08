@@ -392,7 +392,7 @@ const panelist = [
       name: "Dr Barath Narayanan",
       designation: (
         <>
-          Senior Research Scientist & Adjunct Professor <br />Sensor Software Systems<br />Dept. of ECE
+          Senior Research Scientist & <br />Adjunct Professor <br />Sensor Software Systems<br />Dept. of ECE
         </>
       ),
       organization: "University of Dayton Research Institute, USA",
@@ -540,7 +540,7 @@ const panelist = [
         return (
           <>
             <ProfileCard
-              name="Dr Vijayan K Ansari"
+              name="Dr Vijayan K Asari"
               designation={
                 <>
                   Professor & Director , Vision Lab <br /> Department of Electrical and Computer Engineering
@@ -638,7 +638,7 @@ const panelist = [
             name="Shri L Gopalakrishnan"
             designation={
               <>
-                Managing Trustee <br /> PSG & Son's Charities Trust
+                Managing Trustee <br /> PSG & Sons' Charities Trust
               </>
             }
             organization=""
@@ -653,7 +653,7 @@ const panelist = [
             name="Dr K Prakasan"
             designation={
               <>
-                Principal <br /> PSG College of Technology
+                Principal <br />PSG College of Technology 
               </>
             }
             organization=""
@@ -666,24 +666,30 @@ const panelist = [
       <div style={{ 
         marginBottom: '60px', 
         display: 'flex', 
-        justifyContent: 'center', 
-        width: '100%' 
+        justifyContent: 'center',
+        alignItems: 'center',
+        width: '100%',
       }}>
         <div style={{ 
           textAlign: 'center',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          width: '100%',
           maxWidth: '400px',
-          width: '100%'
         }}>
-          <h2>INSTITUTION STEERING COMMITTEE</h2>
-          <ProfileCard
-            name={
-              <>
-                Director - PSG CARE ,<br />Deans and <br />Head of the Departments
-              </>
-            }
-            designation=""
-            organization="PSG College of Technology"
-          />
+          <h2 style={{ marginBottom: '20px' }}>INSTITUTION STEERING COMMITTEE</h2>
+          <div style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
+            <ProfileCard
+              name={
+                <>
+                  Director - PSG CARE ,<br />Deans and <br />Head of the Departments
+                </>
+              }
+              designation=""
+              organization="PSG College of Technology"
+            />
+          </div>
         </div>
       </div>
 
@@ -728,7 +734,7 @@ const panelist = [
       <div style={{ marginBottom: '60px' }}>
         <h2 style={{ textAlign: 'center', marginBottom: '25px', fontFamily: 'Montserrat, "Trebuchet MS", Helvetica, sans-serif', letterSpacing: '1px' }}>ORGANIZING CHAIRS</h2>
         <div style={{ 
-          background: 'linear-gradient(135deg, rgba(0, 74, 173, 0.4), rgba(0, 180, 216, 0.4))',
+          background: 'linear-gradient(135deg, rgba(116, 160, 218, 0.4rgba(165, 212, 222, 0.4).4))',
           borderRadius: '20px',
           padding: '30px',
           boxShadow: '0 10px 20px rgba(0, 0, 0, 0.3)'
@@ -814,7 +820,7 @@ const panelist = [
               color: '#FFFFFF',
               cursor: 'pointer',
               fontSize: '1em',
-              fontFamily: 'Libre Baskerville, Georgia, serif',
+              fontFamily: 'Palatino Linotype", "Book Antiqua", Palatino, serif',
               fontWeight: '500',
               letterSpacing: '0.5px',
               transition: 'background-color 0.3s',
@@ -832,7 +838,7 @@ const panelist = [
               color: '#FFFFFF',
               cursor: 'pointer',
               fontSize: '1em',
-              fontFamily: 'Libre Baskerville, Georgia, serif',
+              fontFamily: 'Palatino Linotype", "Book Antiqua", Palatino, serif',
               fontWeight: '500',
               letterSpacing: '0.5px',
               transition: 'background-color 0.3s',
@@ -850,7 +856,7 @@ const panelist = [
               color: '#FFFFFF',
               cursor: 'pointer',
               fontSize: '1em',
-              fontFamily: 'Libre Baskerville, Georgia, serif',
+              fontFamily: 'Palatino Linotype", "Book Antiqua", Palatino, serif',
               fontWeight: '500',
               letterSpacing: '0.5px',
               transition: 'background-color 0.3s',
@@ -896,7 +902,7 @@ const panelist = [
             color: '#FFFFFF',
             cursor: 'pointer',
             fontSize: '1em',
-            fontFamily: 'Libre Baskerville, Georgia, serif',
+            fontFamily: 'Palatino Linotype", "Book Antiqua", Palatino, serif',
             fontWeight: '500',
             letterSpacing: '0.5px',
             transition: 'background-color 0.3s',
@@ -916,7 +922,7 @@ const panelist = [
             color: '#FFFFFF',
             cursor: 'pointer',
             fontSize: '1em',
-            fontFamily: 'Libre Baskerville, Georgia, serif',
+            fontFamily: 'Palatino Linotype", "Book Antiqua", Palatino, serif',
             fontWeight: '500',
             letterSpacing: '0.5px',
             transition: 'background-color 0.3s',
@@ -936,7 +942,7 @@ const panelist = [
             color: '#FFFFFF',
             cursor: 'pointer',
             fontSize: '1em',
-            fontFamily: 'Libre Baskerville, Georgia, serif',
+            fontFamily: 'Palatino Linotype", "Book Antiqua", Palatino, serif',
             fontWeight: '500',
             letterSpacing: '0.5px',
             transition: 'background-color 0.3s',
@@ -956,7 +962,7 @@ const panelist = [
             color: '#FFFFFF',
             cursor: 'pointer',
             fontSize: '1em',
-            fontFamily: 'Libre Baskerville, Georgia, serif',
+            fontFamily: 'Palatino Linotype", "Book Antiqua", Palatino, serif',
             fontWeight: '500',
             letterSpacing: '0.5px',
             transition: 'background-color 0.3s',
@@ -976,7 +982,7 @@ const panelist = [
             color: '#FFFFFF',
             cursor: 'pointer',
             fontSize: '1em',
-            fontFamily: 'Libre Baskerville, Georgia, serif',
+            fontFamily: 'Palatino Linotype", "Book Antiqua", Palatino, serif',
             fontWeight: '500',
             letterSpacing: '0.5px',
             transition: 'background-color 0.3s',
@@ -996,7 +1002,7 @@ const panelist = [
             color: '#FFFFFF',
             cursor: 'pointer',
             fontSize: '1em',
-            fontFamily: 'Libre Baskerville, Georgia, serif',
+            fontFamily: 'Palatino Linotype", "Book Antiqua", Palatino, serif',
             fontWeight: '500',
             letterSpacing: '0.5px',
             transition: 'background-color 0.3s',
@@ -1016,7 +1022,7 @@ const panelist = [
             color: '#FFFFFF',
             cursor: 'pointer',
             fontSize: '1em',
-            fontFamily: 'Libre Baskerville, Georgia, serif',
+            fontFamily: 'Palatino Linotype", "Book Antiqua", Palatino, serif',
             fontWeight: '500',
             letterSpacing: '0.5px',
             transition: 'background-color 0.3s',
@@ -1036,7 +1042,7 @@ const panelist = [
             color: '#FFFFFF',
             cursor: 'pointer',
             fontSize: '1em',
-            fontFamily: 'Libre Baskerville, Georgia, serif',
+            fontFamily: 'Palatino Linotype", "Book Antiqua", Palatino, serif',
             fontWeight: '500',
             letterSpacing: '0.5px',
             transition: 'background-color 0.3s',
@@ -1056,7 +1062,7 @@ const panelist = [
             color: '#FFFFFF',
             cursor: 'pointer',
             fontSize: '1em',
-            fontFamily: 'Libre Baskerville, Georgia, serif',
+            fontFamily: 'Palatino Linotype", "Book Antiqua", Palatino, serif',
             fontWeight: '500',
             letterSpacing: '0.5px',
             transition: 'background-color 0.3s',
@@ -1076,7 +1082,7 @@ const panelist = [
             color: '#FFFFFF',
             cursor: 'pointer',
             fontSize: '1em',
-            fontFamily: 'Libre Baskerville, Georgia, serif',
+            fontFamily: 'Palatino Linotype", "Book Antiqua", Palatino, serif',
             fontWeight: '500',
             letterSpacing: '0.5px',
             transition: 'background-color 0.3s',
@@ -1139,7 +1145,7 @@ const panelist = [
               name="Mr. Siddarth Narayanan"
               designation={
                 <>
-                  Strategic Alliances at Office of<br /> Principal Scientific Adviser <br />Government of India <br />National Mission Team member<br />Founding Director<br />Bharat Tech Foundation
+                  Strategic Alliances at <br />Office of Principal Scientific Adviser <br />Government of India <br />National Mission Team member<br />Founding Director of <br />Bharat Tech Foundation
                 </>
               }
               organization=""
@@ -1177,7 +1183,7 @@ const panelist = [
               name="Dr Jorg Frochte"
               designation={
                 <>
-                  Professor for Applied Computer Science <br />Interdisciplinary Institute for Applied AI and Data Science <br />Bochum University of Applied Sciences
+                  Professor for Applied Computer Science <br />Interdisciplinary Institute of <br />Applied AI and Data Science <br />Bochum University of Applied Sciences
                 </>
               }
               organization=""
@@ -1195,7 +1201,7 @@ const panelist = [
               name="Dr Srinivas Padmanabhuni"
               designation={
                 <>
-                  IIIT Luknow,<br />Marax AI, INC <br />AI Advisor
+                  Marax AI, INC <br />AI Advisor at IIIT Lucknow <br />CTO and Co-Founder<br />CityMandi , Bengaluru
                 </>
               }
               organization=""
@@ -1214,7 +1220,7 @@ const panelist = [
             <ProfileCard
               name="Mr. Mukund Bhoovaraghavan"
               designation={<>
-                 Principal Group Engineering Manager <br /> Microdoft Hydrabad
+                 Principal Group Engineering Manager <br /> Microsoft Hydrabad
                 </>}
               organization=""
               photoUrl={mukundh}
@@ -1230,7 +1236,7 @@ const panelist = [
             <ProfileCard
               name="Mr Srikanth Subramanian"
               designation={<>
-                 Vice President , Engineering<br />Salesforce , Bengaluru
+                 Vice President of Engineering at<br />Salesforce , Bengaluru
               </>}
               organization=""
               photoUrl={srikanth}
@@ -1257,32 +1263,7 @@ const panelist = [
         </div>
       </div>
 
-      </div>
-    
-      {/* Add CSS for the animated background */}
-      <style jsx global>{`
-        .committee-container {
-          position: relative;
-          z-index: 1;
-          background-color: #1E3A8A; /* Simple solid background color */
-        }
-        
-        /* Add subtle pulse to containers */
-        [style*="background: linear-gradient(135deg, rgba(0, 74, 173, 0.4), rgba(0, 180, 216, 0.4))"] {
-          animation: pulse 6s infinite alternate;
-        }
-        
-        @keyframes pulse {
-          0% { 
-            background: linear-gradient(135deg, rgba(0, 74, 173, 0.4), rgba(0, 180, 216, 0.4));
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-          }
-          100% { 
-            background: linear-gradient(135deg, rgba(0, 95, 200, 0.45), rgba(0, 200, 230, 0.45));
-            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4), 0 0 15px rgba(0, 180, 216, 0.2);
-          }
-        }
-      `}</style>
+      </div> 
       </div></div>
   );
 }

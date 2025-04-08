@@ -15,11 +15,11 @@ const ProfileCard = ({ name, designation, organization, photoUrl }) => {
       transition: 'transform 0.3s, box-shadow 0.3s',
     }}
     onMouseEnter={(e) => {
-      e.currentTarget.style.transform = 'scale(1.1)';
-      e.currentTarget.style.boxShadow = '0 13.5px 27px rgba(0, 0, 0, 0.7)';
+      e.currentTarget.style.transform = 'scale(1.03)';
+      e.currentTarget.style.boxShadow = '0 13.5px 27px rgba(1, 1, 1, 0.79)';
     }}
     onMouseLeave={(e) => {
-      e.currentTarget.style.transform = 'scale(1)';
+      e.currentTarget.style.transform = 'scale(1.0)';
       e.currentTarget.style.boxShadow = '0 9px 18px rgba(0, 0, 0, 0.5)';
     }}
     >
@@ -47,21 +47,23 @@ const ProfileCard = ({ name, designation, organization, photoUrl }) => {
       )}
       <h2 style={{
         margin: '9px 0 4.5px 0',
-        fontFamily: 'Montserrat, "Trebuchet MS", Helvetica, sans-serif',
-        fontWeight: '800',
+        fontFamily: '"Palatino Linotype", "Book Antiqua", Palatino, serif',
+        fontWeight: '1000',
         letterSpacing: '0.5px',
         color: '#FFFFFF',
       }}>{name}</h2>
-      <p style={{ 
+      <h5 style={{ 
         margin: '4.5px 0', 
         fontSize: '1em',
-        fontFamily: 'Segoe UI, Arial, sans-serif'
-      }}>{designation}</p>
-      <p style={{ 
+        fontFamily: 'Georgia, Times, "Times New Roman", serif',
+        fontWeight: '500',
+      }}>{designation}</h5>
+      <h6 style={{ 
         margin: '10px 0 0 0', 
-        fontSize: '0.9em',
-        fontFamily: 'Segoe UI, Arial, sans-serif'
-      }}>{organization}</p>
+        fontSize: '1.0em',
+        fontFamily: 'Georgia, Times, "Times New Roman", serif',
+        fontWeight: '500',
+      }}>{organization}</h6>
     </div>
   );
 };

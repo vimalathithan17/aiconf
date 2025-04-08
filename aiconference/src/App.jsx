@@ -24,7 +24,6 @@ function App() {
       <Reg/>
       <VenueContactSection/>
       <Sponsor/>
-      
       <Footer/>
     </div>
   );

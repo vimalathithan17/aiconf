@@ -68,6 +68,7 @@ import arun from './assets/arun.jpg';
 import mukundh from './assets/mukund.jpg';
 import srikanth from './assets/srikanth.jpg';
 import sudha_R from './assets/sudha_R.png';
+import Dr_Rekha from './assets/Dr_Rekha.jpg';
 
 function Comitte() {
   useEffect(() => {
@@ -90,7 +91,7 @@ function Comitte() {
       name: 'Dr R Rekha', 
       designation: 'Associate Professor', 
       organization: 'Dept. of Information Technology', 
-      iconUrl: RekhaImage 
+      iconUrl: Dr_Rekha 
     },
     { 
       name: 'Dr K Sathiyapriya', 
@@ -117,7 +118,7 @@ function Comitte() {
         name: 'Dr R Rekha', 
       designation: 'Associate Professor', 
       organization: 'Dept. of Information Technology', 
-      iconUrl: RekhaImage 
+      iconUrl: Dr_Rekha
     }
   ];
   const Track2 = [

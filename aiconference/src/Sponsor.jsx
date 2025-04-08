@@ -1,4 +1,5 @@
 import React from "react";
+import psgcare from './assets/psgcare.png';
 
 const Sponsor = () => {
   return (
@@ -83,7 +84,7 @@ const Sponsor = () => {
             In association with
           </h2>
           <img
-            src="/sponsors/psgcare.png"
+            src={psgcare}
             alt="PSG CARE"
             style={{
               height: "50px",

@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
+import psg1 from '../assets/DJI_0165.jpg';
+import psg2 from '../assets/DJI_0192.jpg';
+import psg3 from '../assets/DJI_0200.jpg';
+import psg4 from '../assets/DJI_0234.jpg';
 
 const SliderContainer = styled.div`
   position: relative;
@@ -69,10 +73,10 @@ const Dot = styled.div`
 `;
 
 const images = [
-  '/assets/DJI_0234.JPG',
-  '/assets/DJI_0192.JPG',
-  '/assets/DJI_0200.JPG',
-  '/assets/DJI_0165.JPG',
+  psg4,
+  psg2,
+  psg3,
+  psg1,
 ];
 
 const ImageSlider = () => {
@@ -128,4 +132,4 @@ const ImageSlider = () => {
   );
 };
 
-export default ImageSlider; 
+export default ImageSlider;

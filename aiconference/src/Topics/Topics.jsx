@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import ReactCardFlip from 'react-card-flip';
 import { 
-  FaAtom, FaIndustry, FaRocket, FaChevronDown
+  FaAtom, FaIndustry, FaRocket, FaChevronDown, FaBolt
 } from 'react-icons/fa';
 
 const cardStyle = {
-  width: '360px',
+  width: '450px', // Increased width for better readability when 2 per line
   height: '320px',
   margin: '15px',
   cursor: 'pointer',
@@ -84,7 +84,7 @@ const TopicCard = ({ title, description, topics, icon }) => {
         }} onClick={handleClick}>
           <h4 style={{ 
             fontFamily: 'Libre Baskerville, Georgia, serif', 
-            fontSize: '1.1em', 
+            fontSize: '1.2em', 
             fontWeight: 'bold', 
             marginTop: '0',
             marginBottom: '8px'
@@ -103,7 +103,7 @@ const TopicCard = ({ title, description, topics, icon }) => {
             <ul style={{ 
               listStyleType: 'disc', 
               paddingLeft: '20px', 
-              fontSize: '0.8em', 
+              fontSize: '0.9em', 
               textAlign: 'left', 
               margin: 0 
             }}>
@@ -152,20 +152,13 @@ const TopicsSection = () => {
       description: 'Origin, Evolution, and Development of AI Technologies',
       icon: <FaAtom />,
       topics: [
-        'Foundations of Artificial Intelligence',
         'Evolution of Machine Learning Algorithms',
-        'Evolution from Symbolic to Autonomous Reasoning',
-        'Symbolic AI and Logic-Based Approaches',
         'Neural Networks: From Perceptrons to Deep Learning',
-        'Historical Perspectives on AI Research',
-        'Knowledge Representation & Reasoning',
-        'Expert Systems and Rule-Based Models',
+        'Perspectives on AI Research',
         'Reinforcement Learning Development',
-        'Milestones in Natural Language Processing',
         'AI Hardware Evolution (CPUs → GPUs → TPUs)',
-        'Programming Languages in AI (Lisp, Prolog, Python)',
         'Benchmarking and Dataset Evolution',
-        'Explainability in Classical AI Systems'
+        'Explainability in Early AI Systems'
       ]
     },
     {
@@ -174,21 +167,10 @@ const TopicsSection = () => {
       icon: <FaIndustry />,
       topics: [
         'AI in Healthcare: Diagnosis, Imaging, Drug Discovery',
-        'AI Agents in Business Automation and Decision Support',
-        'Deployment of Autonomous Agents in Real-Time Systems',
-        'Role of AI Agents in Cybersecurity and Surveillance',
         'Smart Manufacturing and Industry 4.0',
-        'Finance, Banking, and FinTech Applications',
         'AI in Education and Personalized Learning',
         'Smart Cities and Urban Intelligence',
-        'Agriculture and Food Security through AI',
         'AI and Ethics in Society',
-        'AI for Governance and Public Policy',
-        'Human-AI Collaboration in the Workplace',
-        'AI in Creative Industries: Art, Music, Media',
-        'Fairness, Bias, and Responsible AI',
-        'NLP Applications in Enterprises',
-        'Accessibility and Inclusive AI Systems',
         'Societal and Behavioral Impacts of AI',
         'AI Regulations and Policy Frameworks'
       ]
@@ -200,19 +182,25 @@ const TopicsSection = () => {
       topics: [
         'Artificial General Intelligence (AGI)',
         'Quantum Machine Learning',
-        'Neuromorphic Computing',
-        'Federated & Trustworthy AI',
-        'Continual & Zero-shot Learning',
-        'Edge AI & TinyML',
-        'Agentic AI & Autonomous Systems',
-        'Large Language Models (LLMs)',
-        'Cognitive Architectures',
-        'AI for Sustainability & Climate',
-        'AI in XR, Metaverse & Digital Twins',
-        'AI + Blockchain & Web3',
-        'Multi-modal Models',
-        'AI in CPS, IoT & 6G',
-        'Generative & Creative AI'
+        'Federated Learning and Data Privacy',
+        'Trustworthy and Transparent AI',
+        'Emotionally Intelligent AI',
+        'Autonomous Vehicles and Robotics',
+        'Edge AI and Next-Gen Hardware'
+      ]
+    },
+    {
+      title: 'Track 4: AI Disrupt',
+      description: 'Breakthroughs & Cross-Disciplinary Disruptions',
+      icon: <FaBolt />,
+      topics: [
+        'Agentic AI and Next-Gen Autonomous Agents',
+        'Large Language Models as Generalist Agents (GPT, Claude, Gemini)',
+        'AI-Augmented Creativity and Generative Design',
+        'AI + Blockchain: Decentralized Intelligence',
+        'Digital Twins and Simulation-Based AI',
+        'AI in the Metaverse and XR (VR/AR/MR)',
+        'Synthetic Data and Data-Centric AI'
       ]
     }
   ];
@@ -233,32 +221,43 @@ const TopicsSection = () => {
         textAlign: 'center',
         marginBottom: '30px',
         color: 'white',
-      }}>Conference Tracks & Topics</h2>
+      }}>CONFERENCE TRACKS & TOPICS</h2>
+      
+      {/* First row: Track 1 and Track 2 */}
       <div style={{ 
-        display: 'flex', 
-        flexWrap: 'nowrap',
+        display: 'flex',
         justifyContent: 'center', 
-        gap: '20px',
-        alignItems: 'stretch',
-        maxWidth: '100%',
-        overflow: 'hidden',
+        flexWrap: 'wrap',
+        gap: '40px',
+        marginBottom: '30px',
       }}>
-        <div style={{
-          display: 'flex',
-          justifyContent: 'center',
-          gap: '20px',
-          paddingBottom: '5px',
-        }}>
-          {topicsData.map((data, index) => (
-            <TopicCard 
-              key={index} 
-              title={data.title} 
-              description={data.description}
-              topics={data.topics} 
-              icon={data.icon} 
-            />
-          ))}
-        </div>
+        {topicsData.slice(0, 2).map((data, index) => (
+          <TopicCard 
+            key={index} 
+            title={data.title} 
+            description={data.description}
+            topics={data.topics} 
+            icon={data.icon} 
+          />
+        ))}
+      </div>
+      
+      {/* Second row: Track 3 and Track 4 */}
+      <div style={{ 
+        display: 'flex',
+        justifyContent: 'center',
+        flexWrap: 'wrap',
+        gap: '40px',
+      }}>
+        {topicsData.slice(2, 4).map((data, index) => (
+          <TopicCard 
+            key={`row2-${index}`} 
+            title={data.title} 
+            description={data.description}
+            topics={data.topics} 
+            icon={data.icon} 
+          />
+        ))}
       </div>
     </div>
   );

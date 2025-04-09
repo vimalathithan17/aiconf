@@ -62,6 +62,10 @@ const ConferenceTracks = () => {
     {
       title: "Track 3: AI Horizon",
       description: "Future Trends, Innovations, and the Next Frontiers of AI"
+    },
+    {
+      title: "Track 4: AI Disruptor",
+      description: "Breakthrough Applications and Paradigm-Shifting Technologies"
     }
   ];
 
@@ -73,8 +77,8 @@ const ConferenceTracks = () => {
         fontWeight: 'bold',
         textAlign: 'center',
         marginBottom: '30px',
-        marginTop: '0',
-      }}>Call for Papers</h2>
+        marginTop: '10px',
+      }}>CALL FOR PAPERS</h2>
       <section style={{
         marginBottom: '60px',
         background: 'linear-gradient(135deg, rgba(0, 74, 173, 0.4), rgba(0, 180, 216, 0.4))',

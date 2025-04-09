@@ -104,10 +104,10 @@ const VenueContactSection = () => {
               }}
             >
               <tbody>
-                {[["Dr D Indumathi", "+91 9876543210"],
-                  ["Dr R Rekha", "+91 9123456780"],
-                  ["Dr K Sathiyapriya", "+91 9988776655"],
-                  ["Dr R Senthil Prabha", "+91 9090909090"]].map(
+                {[["Dr D Indumathi", "+91 7708126502"],
+                  ["Dr R Rekha", "+91 9842163683"],
+                  ["Dr K Sathiyapriya", "+91 9952419595"],
+                  ["Dr R Senthil Prabha", "+91 9942912788"]].map(
                   ([name, phone], i) => (
                     <tr key={i}>
                       <td

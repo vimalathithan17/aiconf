@@ -85,7 +85,7 @@ function App() {
           {/* Section Content */}
           <div style={{ color: '#FFFFFF', position: 'relative', zIndex: 1 }}>
             <div id="about"><About /></div>
-            
+            <br />
             <div id="theme"><ThemeSection /></div><br />
             <div id="cfp"><CallForPapers /></div>
             <div id="topics"><TopicsSection /></div>

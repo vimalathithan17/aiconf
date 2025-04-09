@@ -31,12 +31,34 @@ const Reg = () => {
           Accepted short papers [6–8 pages]
             </li>
             <li style={{ textAlign: 'left', marginBottom: '10px', borderColor: 'white' }}>
-          Selected registered papers will be published in Scopus indexed proceedings and journals.
+          Selected registered papers will be published in Scopus indexed proceedings / Journals.
             </li>
             <li style={{ textAlign: 'left', marginBottom: '10px', borderColor: 'white' }}>
           To submit a paper in CMT (Conference Management Toolkit)
             </li>
           </ul>
+
+          <div style={{ textAlign: 'center', marginTop: '2rem' }}>
+          <a
+            href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2F"
+            style={{
+              padding: '0.75rem 1.5rem',
+              backgroundColor: '#001f54',
+              color: 'white',
+              fontWeight: '500',
+              borderRadius: '0.5rem',
+              textDecoration: 'none',
+              boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+              display: 'inline-block',
+              transition: 'all 0.3s ease',
+              cursor: 'pointer',
+            }}
+            onMouseOver={(e) => e.target.style.backgroundColor = '#023e8a'}
+            onMouseOut={(e) => e.target.style.backgroundColor = '#001f54'}
+          >
+            Submit Your Paper
+          </a>
+        </div>
 
           <h2 style={{ fontSize: '2rem', fontWeight: 'bold', textAlign: 'center', margin: '30px 0', fontFamily: 'Georgia, serif' }}>IMPORTANT DATES</h2>
 
@@ -53,11 +75,11 @@ const Reg = () => {
 }}>
   <tbody>
     {[
-      ['Abstract Submission Deadline', '16.06.2025'],
-      ['Full Paper Submission', '14.07.2025'],
-      ['Notification of Acceptance', '1.10.2025'],
-      ['Camera-Ready Paper Submission', '15.10.2025'],
-      ['Registration Deadline', '31.10.2025']
+      ['Opening Date for Paper Submission', '01.05.2025'],
+      ['Last Date for Full Paper Submission', '01.08.2025'],
+      ['Notification of Acceptance', '15.10.2025'],
+      ['Camera-Ready Paper Submission', '01.11.2025'],
+      ['Last Date for Registration', '15.11.2025']
     ].map(([label, date], idx) => (
       <tr key={idx} style={{ background: 'linear-gradient(to right, #001f54, #023e8a)', color: 'white' }}>
         <td style={{ padding: '1.2rem', border: '3px solid white', fontWeight: 'bold', textAlign: 'left' }}>{label}</td>
@@ -68,7 +90,6 @@ const Reg = () => {
 </table>
         </div>
 
-        {/* Second Container: REGISTRATION DETAILS */}
       <div style={{ 
         marginBottom: '80px', 
         background: 'linear-gradient(135deg, rgba(0, 74, 173, 0.4), rgba(0, 180, 216, 0.4))',
@@ -182,28 +203,6 @@ const Reg = () => {
               </tr>
             </tbody>
           </table>
-        </div>
-
-        <div style={{ textAlign: 'center', marginTop: '2rem' }}>
-          <a
-            href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2F"
-            style={{
-              padding: '0.75rem 1.5rem',
-              backgroundColor: '#001f54',
-              color: 'white',
-              fontWeight: '500',
-              borderRadius: '0.5rem',
-              textDecoration: 'none',
-              boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-              display: 'inline-block',
-              transition: 'all 0.3s ease',
-              cursor: 'pointer',
-            }}
-            onMouseOver={(e) => e.target.style.backgroundColor = '#023e8a'}
-            onMouseOut={(e) => e.target.style.backgroundColor = '#001f54'}
-          >
-            Submit Your Paper
-          </a>
         </div>
       </div>
     </div>

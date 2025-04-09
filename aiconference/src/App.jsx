@@ -13,10 +13,19 @@ import About from './reg-about/about.jsx';
 import Reg from './reg-about/reg.jsx';
 import WelcomeCardSection from './cbeplaces.jsx';
 import MainContent from './components/MainContent.jsx';
+import TempComponent from './temp.jsx';
 
 function App() {
   const [count, setCount] = useState(0);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  // State to handle which component to show
+  const [showTemp, setShowTemp] = useState(false);
+
+  // Export showTemp state and setter for Navbar to use
+  window.appState = {
+    showTemp,
+    setShowTemp
+  };
 
   // Handle mouse movement to influence the animation
   useEffect(() => {
@@ -38,30 +47,56 @@ function App() {
       {/* Background Animation */}
       <BackgroundAnimation mousePosition={mousePosition} />
       
-      {/* Navbar - typically should be above the animation */}
-      <div style={{ position: 'relative', zIndex: 2 }}>
-        <Navbar />
-      </div>
+      {/* Only show Navbar when not displaying TempComponent */}
+      {!showTemp && (
+        <div style={{ position: 'relative', zIndex: 2 }}>
+          <Navbar />
+        </div>
+      )}
 
-      {/* Main Content */}
-      <div id="main-content" className="mainctnt" style={{ position: 'relative', zIndex: 1 }}>
-        <MainContent />
-      </div>
+      {/* Conditionally render content based on state */}
+      {showTemp ? (
+        <div style={{ position: 'relative', zIndex: 1 }}>
+          <TempComponent />
+          {/* Back button to return to main page */}
+          <div style={{
+            position: 'fixed',
+            top: '20px',
+            left: '20px',
+            zIndex: 10,
+            padding: '10px 20px',
+            background: '#004AAD',
+            color: 'white',
+            borderRadius: '8px',
+            cursor: 'pointer',
+            boxShadow: '0 4px 8px rgba(0,0,0,0.2)'
+          }}
+          onClick={() => setShowTemp(false)}>
+            ← Back to Main
+          </div>
+        </div>
+      ) : (
+        <>
+          {/* Main Content */}
+          <div id="main-content" className="mainctnt" style={{ position: 'relative', zIndex: 1 }}>
+            <MainContent />
+          </div>
 
-      {/* Section Content */}
-      <div style={{ color: '#FFFFFF', position: 'relative', zIndex: 1 }}>
-        
-        <div id="about"><About /></div>
-        <div id="committee"><Comitte /></div>
-        <div id="theme"><ThemeSection /></div><br />
-        <div id="cfp"><CallForPapers /></div>
-        <div id="topics"><TopicsSection /></div>
-        <div id="registration"><Reg /></div>
-        <div id="venue-contact"><VenueContactSection /></div>
-        <div id="sponsors"><Sponsor /></div>
-        <div id="welcome"><WelcomeCardSection /></div>
-        <Footer/>
-      </div>
+          {/* Section Content */}
+          <div style={{ color: '#FFFFFF', position: 'relative', zIndex: 1 }}>
+            <div id="about"><About /></div>
+            
+            <div id="theme"><ThemeSection /></div><br />
+            <div id="cfp"><CallForPapers /></div>
+            <div id="topics"><TopicsSection /></div>
+            <div id="registration"><Reg /></div>
+            <div id="venue-contact"><VenueContactSection /></div>
+            <div id="sponsors"><Sponsor /></div>
+            <div id="welcome"><WelcomeCardSection /></div>
+            <Footer/>
+          </div>
+        </>
+      )}
     </>
   );
 }

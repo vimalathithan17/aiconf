@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
+import TempComponent from "../temp";
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState("main-content");
@@ -9,6 +10,13 @@ const Navbar = () => {
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
       setActiveSection(id);
+    }
+  };
+
+  const goToCommittee = () => {
+    // Use the global state set in App.jsx
+    if (window.appState) {
+      window.appState.setShowTemp(true);
     }
   };
 
@@ -30,7 +38,7 @@ const Navbar = () => {
           </li>
           <li 
             className={activeSection === "committee" ? "active" : ""} 
-            onClick={() => scrollToSection("committee")}
+            onClick={goToCommittee}
           >
             Committee
           </li>

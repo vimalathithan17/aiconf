@@ -34,7 +34,13 @@ const Reg = () => {
           Selected registered papers will be published in Scopus indexed proceedings / Journals.
             </li>
             <li style={{ textAlign: 'left', marginBottom: '10px', borderColor: 'white' }}>
-          To submit a paper in CMT (Conference Management Toolkit)
+          All the submitted manuscripts will be sent for peer review and the corresponding author will be notified the outcome of the review process.
+            </li>
+            <li style={{ textAlign: 'left', marginBottom: '10px', borderColor: 'white' }}>
+          Submitted research work must be original in content amd free from plagiarism. Authors are requested to submit a plagiarism report using <br />iThenticate / Turnitin. Plagiarism should be less than 20% to qualify for the paper to be reviewed.
+            </li>
+            <li style={{ textAlign: 'left', marginBottom: '10px', borderColor: 'white' }}>
+          Submit the manuscripts through the below link.
             </li>
           </ul>
 

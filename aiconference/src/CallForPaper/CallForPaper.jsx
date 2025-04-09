@@ -62,10 +62,6 @@ const ConferenceTracks = () => {
     {
       title: "Track 3: AI Horizon",
       description: "Future Trends, Innovations, and the Next Frontiers of AI"
-    },
-    {
-      title: "Track 4: AI Disruptor",
-      description: "Breakthrough Applications and Paradigm-Shifting Technologies"
     }
   ];
 

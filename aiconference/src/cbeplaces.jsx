@@ -15,7 +15,7 @@ const WelcomeCardSection = () => {
   const scrollRef = useRef(null);
   const animationRef = useRef(null);
   const [isPaused, setIsPaused] = useState(false);
-  const speedRef = useRef(2); // Increased value for faster scrolling
+  const speedRef = useRef(0.5); // Reduced from 2 to 0.8 for slower scrolling
 
   const images = [
     { name: "PSG GRD Museum", img: grd },

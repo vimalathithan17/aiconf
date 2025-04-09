@@ -1,14 +1,15 @@
 import React, { useEffect, useRef, useState } from "react";
 import grd from './assets/grd.jpg';
 import marudhamalai from './assets/marudhamalai.png';
-import brooks from './assets/brookefields.png';
 import isha from './assets/isha.png';
 import gass from './assets/gass.png';
-import prozone from './assets/prozone.png';
 import gd from './assets/gd.png';
 import ilovekovai from './assets/ilovekovai.jpg';
 import thiruvalluvar from './assets/thiruvalluvar.jpg';
 import boat from './assets/boat.jpg';
+import perur from './assets/perur.jpg';
+import ooty from './assets/ooty.jpg';
+import falls from './assets/falls.jpg';
 
 const WelcomeCardSection = () => {
   const scrollRef = useRef(null);
@@ -19,14 +20,15 @@ const WelcomeCardSection = () => {
   const images = [
     { name: "PSG GRD Museum", img: grd },
     { name: "Marudhamalai Temple", img: marudhamalai },
-    { name: "Brookefields Mall", img: brooks },
     { name: "Isha Yoga Center", img: isha },
     { name: "Gass Forest Museum", img: gass },
-    { name: "Prozone Mall", img: prozone },
     { name: "GD Car Museum", img: gd },
     { name: "Ukkadam Lake Spot", img: ilovekovai },
     { name: "Thiruvalluvar Statue", img: thiruvalluvar },
-    { name: "Vallankulam Boat House", img: boat }
+    { name: "Vallankulam Boat House", img: boat },
+    { name: "Perur Temple", img: perur },
+    { name: "Ooty", img: ooty },
+    { name: "Courtallam Falls", img: falls }
   ];
 
   const repeatedImages = [...images, ...images]; // Duplicate for seamless scroll

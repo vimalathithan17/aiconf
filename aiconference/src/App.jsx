@@ -53,9 +53,9 @@ function App() {
         
         <div id="about"><About /></div>
         <div id="committee"><Comitte /></div>
+        <div id="theme"><ThemeSection /></div><br />
         <div id="cfp"><CallForPapers /></div>
         <div id="topics"><TopicsSection /></div>
-        <div id="theme"><ThemeSection /></div>
         <div id="registration"><Reg /></div>
         <div id="venue-contact"><VenueContactSection /></div>
         <div id="sponsors"><Sponsor /></div>

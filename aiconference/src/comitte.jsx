@@ -499,12 +499,54 @@ const panelist = [
       name: "Dr. Sudha Ramalingam",
       designation: (
         <>
-          Director-Research & Innovation<br />Professor - Community Medicine<br />PSG CMMT 
+          Director-Research & Innovation<br />Professor - Community Medicine<br />PSG Institute of Medical Sciences and Research
         </>
       ),
       organization:"",
       photoUrl: sudha_R,
     },
+    {
+      name: "Mr. Siddarth Narayanan",
+      designation: (
+        <>
+          Strategic Alliances at <br />Office of Principal Scientific Adviser <br />Government of India <br />National Mission Team member<br />Founding Director of <br />Bharat Tech Foundation
+        </>
+      ),
+      organization: "",
+      photoUrl: siddarth
+    },
+    {
+      name:"Dr Vijayan K Asari",
+      designation:(
+                <>
+                  Professor & Director <br />Vision Lab <br /> Department of Electrical and Computer Engineering
+                </>
+      ),
+      organization:"University of Dayton, USA",
+      photoUrl: VijayanImage
+    },
+    {
+      name: "Dr Pablo Moscato",
+      designation: (
+        <>
+          Professor of Data Science <br /> School of Information and Physical Sciences (Data Science and Statistics)
+        </>
+      ),
+      organization: "University of Newcastle, Australia",
+      photoUrl: PabloImage
+    },
+    {
+      name:"Dr Ferrante Neri",
+      designation:(
+                <>
+                  Professor <br /> Machine Learning and Artificial Intelligence
+                </>
+      ),
+     organization:"University of Surrey , UK",
+    photoUrl:FerranteImage
+    }
+    
+
   ];
 
   // State for carousel
@@ -1141,17 +1183,14 @@ const panelist = [
             maxWidth: 'calc(50% - 60px)',
             display: 'flex',
             justifyContent: 'center'
-          }}>
-            <ProfileCard
-              name="Mr. Siddarth Narayanan"
-              designation={
-                <>
-                  Strategic Alliances at <br />Office of Principal Scientific Adviser <br />Government of India <br />National Mission Team member<br />Founding Director of <br />Bharat Tech Foundation
-                </>
-              }
-              organization=""
-              photoUrl={siddarth} // Use the imported siddarth image
-            />
+          }}><ProfileCard
+          name="Dr Arun Rajkumar"
+          designation={<>
+            Assistant Professor <br />Dept. of Data Science and AI <br />Centre for Responsible AI <br />IIT Madras
+          </>}
+          organization=""
+          photoUrl={arun}
+        />
           </div>
           <div style={{
             margin: '10px',
@@ -1252,14 +1291,7 @@ const panelist = [
             display: 'flex',
             justifyContent: 'center'
           }}>
-            <ProfileCard
-              name="Dr Arun Rajkumar"
-              designation={<>
-                Assistant Professor <br />Dept. of Data Science and AI <br />Centre for Responsible AI <br />IIT Madras
-              </>}
-              organization=""
-              photoUrl={arun}
-            />
+            
           </div>
         </div>
       </div>

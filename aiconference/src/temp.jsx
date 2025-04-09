@@ -49,7 +49,7 @@ const TempComponent = () => {
             marginBottom: '10px',
             fontWeight: '400',  
             fontSize: '1.2em'
-          }}>Principal, PSG College of Technology</h4>
+          }}>Principal , PSG College of Technology</h4>
         </div>
         
         <div>
@@ -63,7 +63,7 @@ const TempComponent = () => {
             marginBottom: '10px',
             fontWeight: '400',  
             fontSize: '1.2em'
-          }}>Director, PSG Centre for Academic Research and Excellence</h4>
+          }}>Director , PSG Centre for Academic Research and Excellence</h4>
         </div>
       </div>
       
@@ -90,7 +90,7 @@ const TempComponent = () => {
             marginBottom: '2px',  // Reduced from 5px to 2px
             fontWeight: '400',  // Reduced boldness for designation
             fontSize: '1.2em'
-          }}>Professor, Dept. of Computer Science and Engineering<br />Director, PSG - AI Consortium</h4>
+          }}>Professor , Dept. of Computer Science and Engineering<br />Director, PSG - AI Consortium</h4>
         </div>
         
         <div>
@@ -104,7 +104,7 @@ const TempComponent = () => {
             marginBottom: '1px',  // Reduced from 5px to 2px
             fontWeight: '400',  // Reduced boldness for designation
             fontSize: '1.2em'
-          }}>Professor, Dept. of Information Technology<br />Infrastructure Technical Lead, PSG - AI Consortium</h4>
+          }}>Professor , Dept. of Information Technology<br />Infrastructure Technical Lead, PSG - AI Consortium</h4>
         </div>
       </div>
 
@@ -135,7 +135,7 @@ const TempComponent = () => {
         </div>
         </div>
            
-        <h2 style={{ textAlign: 'center', marginBottom: '25px' }}>TECHNICAL PROGRAMME COMMITTEE</h2>   
+        <h2 style={{ textAlign: 'center', marginBottom: '25px' }}>TECHNICAL PROGRAM COMMITTEE</h2>   
         <h3 style={{ textAlign: 'center', marginBottom: '25px' }}>CHAIR</h3>
       <div style={{ 
         marginBottom: '60px', 
@@ -159,7 +159,7 @@ const TempComponent = () => {
             marginBottom: '2px',  // Reduced from 5px to 2px
             fontWeight: '400',  // Reduced boldness for designation
             fontSize: '1.2em'
-          }}>Associate Professor, Dept. of Computer Science and Engineering</h4>
+          }}>Associate Professor , Dept. of Computer Science and Engineering</h4>
         </div>
         
         <div>
@@ -173,7 +173,7 @@ const TempComponent = () => {
             marginBottom: '1px',  // Reduced from 5px to 2px
             fontWeight: '400',  // Reduced boldness for designation
             fontSize: '1.2em'
-          }}>Associate Professor, Dept. of Information Technology</h4>
+          }}>Associate Professor , Dept. of Information Technology</h4>
         </div>
         <div>
           <h2 style={{ 
@@ -186,7 +186,7 @@ const TempComponent = () => {
             marginBottom: '2px',  // Reduced from 5px to 2px
             fontWeight: '400',  // Reduced boldness for designation
             fontSize: '1.2em'
-          }}>Associate Professor, Dept. of Computer Science and Engineering</h4>
+          }}>Associate Professor , Dept. of Computer Science and Engineering</h4>
         </div>
         
         <div>
@@ -200,7 +200,7 @@ const TempComponent = () => {
             marginBottom: '1px',  // Reduced from 5px to 2px
             fontWeight: '400',  // Reduced boldness for designation
             fontSize: '1.2em'
-          }}>Associate Professor, Dept. of Information Technology</h4>
+          }}>Associate Professor , Dept. of Information Technology</h4>
         </div>
      
       <div>
@@ -214,7 +214,7 @@ const TempComponent = () => {
             marginBottom: '1px',  // Reduced from 5px to 2px
             fontWeight: '400',  // Reduced boldness for designation
             fontSize: '1.2em'
-          }}>Assistant Professor(Sl.Gr), Dept. of Information Technology</h4>
+          }}>Assistant Professor(Sl.Gr) , Dept. of Information Technology</h4>
         </div>
         </div>
   
@@ -321,12 +321,13 @@ Salesforce , Bengaluru</h4>
                 Indian Institute of Technology Jammu , Jammu & Kashmir
               </td>
             </tr>
+            
             <tr>
               <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
-                • Dr Sonali Agarwal
+                • Dr Vineeth N Balasubramaniam
               </td>
               <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
-                 Indian Institute of Information Technology Allahabad
+                  Indian Institute of Technology Hyderabad 
               </td>
             </tr>
             <tr>
@@ -335,6 +336,14 @@ Salesforce , Bengaluru</h4>
               </td>
               <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
                   Indian Institute of Technology Hyderabad 
+              </td>
+            </tr>
+            <tr>
+              <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
+                • Dr Sonali Agarwal
+              </td>
+              <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
+                 Indian Institute of Information Technology Allahabad
               </td>
             </tr>
             <tr>
@@ -424,6 +433,14 @@ Salesforce , Bengaluru</h4>
             </tr>
             <tr>
               <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
+                • Dr C S Saravana Kumar
+              </td>
+              <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
+                 Bosch Global Software Technologies Private Limited, Coimbatore
+              </td>
+            </tr>
+            <tr>
+              <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
                 • Mr Siddarth Narayanan
               </td>
               <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
@@ -438,14 +455,7 @@ Salesforce , Bengaluru</h4>
                 Samsung R&D Institute, Bangalore
               </td>
             </tr>
-            <tr>
-              <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
-                • Dr C S Saravana Kumar
-              </td>
-              <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
-                 Bosch Global Software Technologies Private Limited, Coimbatore
-              </td>
-            </tr>
+            
             <tr>
               <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
                 • Mr Mukund Bhoovaraghavan

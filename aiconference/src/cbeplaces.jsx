@@ -28,7 +28,7 @@ const WelcomeCardSection = () => {
     { name: "Vallankulam Boat House", img: boat },
     { name: "Perur Temple", img: perur },
     { name: "Ooty", img: ooty },
-    { name: "Courtallam Falls", img: falls }
+    { name: "Siruvani Falls", img: falls }
   ];
 
   const repeatedImages = [...images, ...images]; // Duplicate for seamless scroll

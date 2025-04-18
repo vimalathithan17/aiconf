@@ -269,7 +269,7 @@ const TempComponent = () => {
             textAlign: 'center', 
             marginBottom: '10px',
             fontWeight: '800'  // Increased boldness for name
-          }}>Dr Milli Pant </h2>
+          }}>Dr Millie Pant </h2>
           <h4 style={{ 
             textAlign: 'center', 
             marginBottom: '2px',  // Reduced from 5px to 2px

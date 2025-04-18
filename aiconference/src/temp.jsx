@@ -25,8 +25,36 @@ const TempComponent = () => {
       margin: '0 auto'
     }}>
       <h1 style={{ textAlign: 'center', marginBottom: '40px' }}>ORGANIZING COMMITTEE</h1>
+
+      <h2 style={{ textAlign: 'center', marginBottom: '25px' }}>PATRON</h2>
+      <div style={{ 
+        marginBottom: '60px', 
+        background: 'linear-gradient(135deg, rgba(0, 74, 173, 0.4), rgba(0, 180, 216, 0.4))',
+        borderRadius: '20px',
+        padding: '30px',
+        boxShadow: '0 10px 20px rgba(0, 0, 0, 0.3)',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        gap: '30px'
+      }}>
+        <div>
+          <h2 style={{ 
+            textAlign: 'center', 
+            marginBottom: '10px', 
+            fontWeight: '800' 
+          }}>Shri L Gopalakrishnan</h2>
+          <h4 style={{ 
+            textAlign: 'center', 
+            marginBottom: '10px',
+            fontWeight: '400',  
+            fontSize: '1.2em'
+          }}>Managing Trustee<br />PSG & Sons' Charities</h4>
+        </div>
+        
+      </div>
       
-      <h2 style={{ textAlign: 'center', marginBottom: '25px' }}>STEERING COMMITTEE</h2>
+      <h2 style={{ textAlign: 'center', marginBottom: '25px' }}>CO - PATRON</h2>
       <div style={{ 
         marginBottom: '60px', 
         background: 'linear-gradient(135deg, rgba(0, 74, 173, 0.4), rgba(0, 180, 216, 0.4))',
@@ -49,25 +77,12 @@ const TempComponent = () => {
             marginBottom: '10px',
             fontWeight: '400',  
             fontSize: '1.2em'
-          }}>Principal , PSG College of Technology</h4>
+          }}>Principal <br />PSG College of Technology</h4>
         </div>
         
-        <div>
-          <h2 style={{ 
-            textAlign: 'center', 
-            marginBottom: '10px',
-            fontWeight: '800' 
-          }}>Dr R Rudramoorthy</h2>
-          <h4 style={{ 
-            textAlign: 'center', 
-            marginBottom: '10px',
-            fontWeight: '400',  
-            fontSize: '1.2em'
-          }}>Director , PSG Centre for Academic Research and Excellence</h4>
-        </div>
       </div>
       
-      <h3 style={{ textAlign: 'center', marginBottom: '25px' }}>CHAIR</h3>
+      <h2 style={{ textAlign: 'center', marginBottom: '25px' }}>GENERAL CHAIRS</h2>
       <div style={{ 
         marginBottom: '60px', 
         background: 'linear-gradient(135deg, rgba(0, 74, 173, 0.4), rgba(0, 180, 216, 0.4))',
@@ -90,7 +105,7 @@ const TempComponent = () => {
             marginBottom: '2px',  // Reduced from 5px to 2px
             fontWeight: '400',  // Reduced boldness for designation
             fontSize: '1.2em'
-          }}>Professor , Dept. of Computer Science and Engineering<br />Director, PSG - AI Consortium</h4>
+          }}>Professor <br />Department of Computer Science and Engineering<br />Director, PSG - AI Consortium<br />PSG College of Technology</h4>
         </div>
         
         <div>
@@ -104,11 +119,82 @@ const TempComponent = () => {
             marginBottom: '1px',  // Reduced from 5px to 2px
             fontWeight: '400',  // Reduced boldness for designation
             fontSize: '1.2em'
-          }}>Professor , Dept. of Information Technology<br />Infrastructure Technical Lead, PSG - AI Consortium</h4>
+          }}>Professor <br />Department of Information Technology<br />Infrastructure Technical Lead, PSG - AI Consortium<br />PSG College of Technology</h4>
         </div>
       </div>
 
-      <h3 style={{ textAlign: 'center', marginBottom: '25px' }}> CO - CHAIR</h3>
+      
+           
+        <h2 style={{ textAlign: 'center', marginBottom: '25px' }}>ORGANIZING CHAIRS</h2>   
+      <div style={{ 
+        marginBottom: '60px', 
+        background: 'linear-gradient(135deg, rgba(0, 74, 173, 0.4), rgba(0, 180, 216, 0.4))',
+        borderRadius: '20px',
+        padding: '30px',
+        boxShadow: '0 10px 20px rgba(0, 0, 0, 0.3)',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        gap: '30px'
+      }}>
+        <div>
+          <h2 style={{ 
+            textAlign: 'center', 
+            marginBottom: '10px',
+            fontWeight: '800'  // Increased boldness for name
+          }}>Dr D Indumathi</h2>
+          <h4 style={{ 
+            textAlign: 'center', 
+            marginBottom: '2px',  // Reduced from 5px to 2px
+            fontWeight: '400',  // Reduced boldness for designation
+            fontSize: '1.2em'
+          }}>Associate Professor <br />Department of Computer Science and Engineering<br />PSG College of Technology</h4>
+        </div>
+        
+        <div>
+          <h2 style={{ 
+            textAlign: 'center', 
+            marginBottom: '10px',
+            fontWeight: '800'  // Increased boldness for name
+          }}>Dr R Rekha</h2>
+          <h4 style={{ 
+            textAlign: 'center', 
+            marginBottom: '1px',  // Reduced from 5px to 2px
+            fontWeight: '400',  // Reduced boldness for designation
+            fontSize: '1.2em'
+          }}>Associate Professor <br /> Department of Information Technology<br />PSG College of Technology</h4>
+        </div>
+        <div>
+          <h2 style={{ 
+            textAlign: 'center', 
+            marginBottom: '10px',
+            fontWeight: '800'  // Increased boldness for name
+          }}>Dr K Sathiyapriya</h2>
+          <h4 style={{ 
+            textAlign: 'center', 
+            marginBottom: '2px',  // Reduced from 5px to 2px
+            fontWeight: '400',  // Reduced boldness for designation
+            fontSize: '1.2em'
+          }}>Associate Professor <br />Department of Computer Science and Engineering<br />PSG College of Technology</h4>
+        </div>
+        
+        <div>
+          <h2 style={{ 
+            textAlign: 'center', 
+            marginBottom: '10px',
+            fontWeight: '800'  // Increased boldness for name
+          }}>Dr R Senthil Prabha</h2>
+          <h4 style={{ 
+            textAlign: 'center', 
+            marginBottom: '1px',  // Reduced from 5px to 2px
+            fontWeight: '400',  // Reduced boldness for designation
+            fontSize: '1.2em'
+          }}>Associate Professor <br />Department of Information Technology<br />PSG College of Technology</h4>
+        </div>
+     
+      
+        </div>
+        <h2 style={{ textAlign: 'center', marginBottom: '25px' }}>ORGANIZING CO - CHAIR</h2>
       <div style={{ 
         marginBottom: '60px', 
         background: 'linear-gradient(135deg, rgba(0, 74, 173, 0.4), rgba(0, 180, 216, 0.4))',
@@ -134,91 +220,9 @@ const TempComponent = () => {
           }}>Professor of Machine Learning and Artificial Intelligence<br />University of Surrey , UK</h4>
         </div>
         </div>
-           
-        <h2 style={{ textAlign: 'center', marginBottom: '25px' }}>TECHNICAL PROGRAM COMMITTEE</h2>   
-        <h3 style={{ textAlign: 'center', marginBottom: '25px' }}>CHAIR</h3>
-      <div style={{ 
-        marginBottom: '60px', 
-        background: 'linear-gradient(135deg, rgba(0, 74, 173, 0.4), rgba(0, 180, 216, 0.4))',
-        borderRadius: '20px',
-        padding: '30px',
-        boxShadow: '0 10px 20px rgba(0, 0, 0, 0.3)',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        gap: '30px'
-      }}>
-        <div>
-          <h2 style={{ 
-            textAlign: 'center', 
-            marginBottom: '10px',
-            fontWeight: '800'  // Increased boldness for name
-          }}>Dr D Indumathi</h2>
-          <h4 style={{ 
-            textAlign: 'center', 
-            marginBottom: '2px',  // Reduced from 5px to 2px
-            fontWeight: '400',  // Reduced boldness for designation
-            fontSize: '1.2em'
-          }}>Associate Professor , Dept. of Computer Science and Engineering</h4>
-        </div>
-        
-        <div>
-          <h2 style={{ 
-            textAlign: 'center', 
-            marginBottom: '10px',
-            fontWeight: '800'  // Increased boldness for name
-          }}>Dr R Rekha</h2>
-          <h4 style={{ 
-            textAlign: 'center', 
-            marginBottom: '1px',  // Reduced from 5px to 2px
-            fontWeight: '400',  // Reduced boldness for designation
-            fontSize: '1.2em'
-          }}>Associate Professor , Dept. of Information Technology</h4>
-        </div>
-        <div>
-          <h2 style={{ 
-            textAlign: 'center', 
-            marginBottom: '10px',
-            fontWeight: '800'  // Increased boldness for name
-          }}>Dr K Sathiyapriya</h2>
-          <h4 style={{ 
-            textAlign: 'center', 
-            marginBottom: '2px',  // Reduced from 5px to 2px
-            fontWeight: '400',  // Reduced boldness for designation
-            fontSize: '1.2em'
-          }}>Associate Professor , Dept. of Computer Science and Engineering</h4>
-        </div>
-        
-        <div>
-          <h2 style={{ 
-            textAlign: 'center', 
-            marginBottom: '10px',
-            fontWeight: '800'  // Increased boldness for name
-          }}>Dr R Senthil Prabha</h2>
-          <h4 style={{ 
-            textAlign: 'center', 
-            marginBottom: '1px',  // Reduced from 5px to 2px
-            fontWeight: '400',  // Reduced boldness for designation
-            fontSize: '1.2em'
-          }}>Associate Professor , Dept. of Information Technology</h4>
-        </div>
-     
-      <div>
-          <h2 style={{ 
-            textAlign: 'center', 
-            marginBottom: '10px',
-            fontWeight: '800'  // Increased boldness for name
-          }}>Dr B Sangeetha</h2>
-          <h4 style={{ 
-            textAlign: 'center', 
-            marginBottom: '1px',  // Reduced from 5px to 2px
-            fontWeight: '400',  // Reduced boldness for designation
-            fontSize: '1.2em'
-          }}>Assistant Professor(Sl.Gr) , Dept. of Information Technology</h4>
-        </div>
-        </div>
   
-        <h3 style={{ textAlign: 'center', marginBottom: '25px' }}> CO - CHAIR</h3>
+
+        <h2 style={{ textAlign: 'center', marginBottom: '25px' }}> SCIENTIFIC COMMITTEE CHAIRS</h2>
       <div style={{ 
         marginBottom: '60px', 
         background: 'linear-gradient(135deg, rgba(0, 74, 173, 0.4), rgba(0, 180, 216, 0.4))',
@@ -245,34 +249,83 @@ const TempComponent = () => {
           School of Information and Physical Sciences (Data Science and Statistics)<br />
           University of Newcastle, Australia</h4>
         </div>
-        </div>
-
-        <h2 style={{ textAlign: 'center', marginBottom: '25px' }}> SCIENTIFIC COMMITTEE CHAIR</h2>
-      <div style={{ 
-        marginBottom: '60px', 
-        background: 'linear-gradient(135deg, rgba(0, 74, 173, 0.4), rgba(0, 180, 216, 0.4))',
-        borderRadius: '20px',
-        padding: '30px',
-        boxShadow: '0 10px 20px rgba(0, 0, 0, 0.3)',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        gap: '30px'
-      }}>
         <div>
           <h2 style={{ 
             textAlign: 'center', 
             marginBottom: '10px',
             fontWeight: '800'  // Increased boldness for name
-          }}>Mr Srikanth Subramanian </h2>
+          }}>Dr R Sudha Ramalingam </h2>
           <h4 style={{ 
             textAlign: 'center', 
             marginBottom: '2px',  // Reduced from 5px to 2px
             fontWeight: '400',  // Reduced boldness for designation
             fontSize: '1.2em'
-          }}>Vice President of Engineering @<br />
-Salesforce , Bengaluru</h4>
+          }}>Professor & Head , Community Medicine<br />
+          Director - Research and Innovation<br />
+          PSG Institute of Medical Science and Research , India</h4>
         </div>
+        <div>
+          <h2 style={{ 
+            textAlign: 'center', 
+            marginBottom: '10px',
+            fontWeight: '800'  // Increased boldness for name
+          }}>Dr Milli Pant </h2>
+          <h4 style={{ 
+            textAlign: 'center', 
+            marginBottom: '2px',  // Reduced from 5px to 2px
+            fontWeight: '400',  // Reduced boldness for designation
+            fontSize: '1.2em'
+          }}>Professor & Head <br />
+          Department of Applied Mathematics and Scientific Computing<br />
+          Indian Institute of Technology Roorke , India</h4>
+        </div>
+        <div>
+          <h2 style={{ 
+            textAlign: 'center', 
+            marginBottom: '10px',
+            fontWeight: '800'  // Increased boldness for name
+          }}>Dr B Malar</h2>
+          <h4 style={{ 
+            textAlign: 'center', 
+            marginBottom: '2px',  // Reduced from 5px to 2px
+            fontWeight: '400',  // Reduced boldness for designation
+            fontSize: '1.2em'
+          }}>Professor <br />
+          Department of Applied Mathematics and Computational Sciences<br />
+          PSG College of Technology , India</h4>
+        </div>
+        <div>
+          <h2 style={{ 
+            textAlign: 'center', 
+            marginBottom: '10px',
+            fontWeight: '800'  // Increased boldness for name
+          }}>Dr Arun Rajkumar</h2>
+          <h4 style={{ 
+            textAlign: 'center', 
+            marginBottom: '2px',  // Reduced from 5px to 2px
+            fontWeight: '400',  // Reduced boldness for designation
+            fontSize: '1.2em'
+          }}>Assistant Professor <br />
+          Department of Computer Science and Engineering<br />
+          Indian Institute of Technology Madras , India</h4>
+        </div>
+        <div>
+          <h2 style={{ 
+            textAlign: 'center', 
+            marginBottom: '10px',
+            fontWeight: '800'  // Increased boldness for name
+          }}>Dr B Sangeetha</h2>
+          <h4 style={{ 
+            textAlign: 'center', 
+            marginBottom: '1px',  // Reduced from 5px to 2px
+            fontWeight: '400',  // Reduced boldness for designation
+            fontSize: '1.2em'
+          }}>Assistant Professor(Sl.Gr) <br />Department of Information Technology<br />
+          PSG College of Technology</h4>
+        </div>
+
+
+
         </div>
 
         <h2 style={{ textAlign: 'center', marginBottom: '25px' }}> ADVISORY COMMITTEE </h2>
@@ -406,15 +459,6 @@ Salesforce , Bengaluru</h4>
             
             
             
-            
-            <tr>
-              <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
-                • Dr Sudha Ramalingam
-              </td>
-              <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
-                 PSG Institute of Medical Sciences and Research
-              </td>
-            </tr>
             <tr>
               <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
                 • Dr V Govindasamy
@@ -473,6 +517,14 @@ Salesforce , Bengaluru</h4>
               </td>
               <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
                  Continental Technical Center, India
+              </td>
+            </tr>
+            <tr>
+              <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
+                • Mr Srikanth Subramaniam
+              </td>
+              <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
+                 Salesforce , Banglore
               </td>
             </tr>
             

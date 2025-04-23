@@ -233,7 +233,7 @@ const TempComponent = () => {
             textAlign: 'center', 
             marginBottom: '10px',
             fontWeight: '800'  // Increased boldness for name
-          }}>Dr Ferrante Nerim</h2>
+          }}>Dr Ferrante Neri</h2>
           <h4 style={{ 
             textAlign: 'center', 
             marginBottom: '2px',  // Reduced from 5px to 2px
@@ -390,7 +390,7 @@ const TempComponent = () => {
             <tbody>
               <tr>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
-                  • Dr Albert Sunny
+                  Dr Albert Sunny
                 </td>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
                   Indian Institute of Science Bangalore, Karnataka
@@ -398,7 +398,7 @@ const TempComponent = () => {
               </tr>
               <tr>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
-                  • Dr Badri Narayan Subudhi
+                  Dr Badri Narayan Subudhi
                 </td>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
                   Indian Institute of Technology Jammu , Jammu & Kashmir
@@ -406,7 +406,7 @@ const TempComponent = () => {
               </tr>
               <tr>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
-                  • Dr Vineeth N Balasubramaniam
+                  Dr Vineeth N Balasubramaniam
                 </td>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
                   Indian Institute of Technology Hyderabad 
@@ -414,7 +414,7 @@ const TempComponent = () => {
               </tr>
               <tr>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
-                  • Dr Siva Kumar K
+                  Dr Siva Kumar K
                 </td>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
                   Indian Institute of Technology Hyderabad 
@@ -422,7 +422,7 @@ const TempComponent = () => {
               </tr>
               <tr>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
-                  • Dr Sonali Agarwal
+                  Dr Sonali Agarwal
                 </td>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
                   Indian Institute of Information Technology Allahabad
@@ -430,7 +430,7 @@ const TempComponent = () => {
               </tr>
               <tr>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
-                  • Dr Vijayakumar Krishnasamy
+                  Dr Vijayakumar Krishnasamy
                 </td>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
                   Indian Institute of Information Technology Design and Manufacturing Kancheepuram
@@ -438,7 +438,7 @@ const TempComponent = () => {
               </tr>
               <tr>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
-                  • Dr R Dhanalakshmi
+                  Dr R Dhanalakshmi
                 </td>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
                   Indian Institute of Information Technology, Trichy
@@ -446,7 +446,7 @@ const TempComponent = () => {
               </tr>
               <tr>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
-                  • Dr Shelly Sachdeva
+                  Dr Shelly Sachdeva
                 </td>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
                   National Institute of Technology, Delhi
@@ -454,7 +454,7 @@ const TempComponent = () => {
               </tr>
               <tr>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
-                  • Dr Fazal A Talukdar
+                  Dr Fazal A Talukdar
                 </td>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
                   National Institute of Technology Silchar, Assam
@@ -462,7 +462,7 @@ const TempComponent = () => {
               </tr>
               <tr>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
-                  • Dr Santhi Thilagam
+                  Dr Santhi Thilagam
                 </td>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
                   National Institute of Technology  Karnataka ,Surathkal
@@ -470,7 +470,7 @@ const TempComponent = () => {
               </tr>
               <tr>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
-                  • Dr Surendran B
+                  Dr Surendran B
                 </td>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
                   National Institute of Technology Puducherry, Karaikal
@@ -478,7 +478,7 @@ const TempComponent = () => {
               </tr>
               <tr>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
-                  • Dr S Nickolas
+                  Dr S Nickolas
                 </td>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
                   National Institute of Technology Trichy 
@@ -486,7 +486,7 @@ const TempComponent = () => {
               </tr>
               <tr>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
-                  • Dr V Govindasamy
+                  Dr V Govindasamy
                 </td>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
                   Pondicherry Engineering College, Puducherry
@@ -494,7 +494,7 @@ const TempComponent = () => {
               </tr>
               <tr>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
-                  • Dr Amit Konar
+                  Dr Amit Konar
                 </td>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
                   Jadavpur University, Kolkata
@@ -502,7 +502,7 @@ const TempComponent = () => {
               </tr>
               <tr>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
-                  • Dr C S Saravana Kumar
+                  Dr C S Saravana Kumar
                 </td>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
                   Bosch Global Software Technologies Private Limited, Coimbatore
@@ -510,7 +510,7 @@ const TempComponent = () => {
               </tr>
               <tr>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
-                  • Mr Siddarth Narayanan
+                  Mr Siddarth Narayanan
                 </td>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
                   Office of Principal Scientific Adviser, Government of India
@@ -518,7 +518,7 @@ const TempComponent = () => {
               </tr>
               <tr>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
-                  • Ms Sudha Velusamy
+                  Ms Sudha Velusamy
                 </td>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
                   Samsung R&D Institute, Bangalore
@@ -526,7 +526,7 @@ const TempComponent = () => {
               </tr>
               <tr>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
-                  • Mr Mukund Bhoovaraghavan
+                  Mr Mukund Bhoovaraghavan
                 </td>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
                   Microsoft, Hyderabad
@@ -534,7 +534,7 @@ const TempComponent = () => {
               </tr>
               <tr>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
-                  • Mr Thiyagarajan Subramani
+                  Mr Thiyagarajan Subramani
                 </td>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
                   Continental Technical Center, India
@@ -542,7 +542,7 @@ const TempComponent = () => {
               </tr>
               <tr>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
-                  • Mr Srikanth Subramaniam
+                  Mr Srikanth Subramaniam
                 </td>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
                   Salesforce , Banglore
@@ -577,7 +577,7 @@ const TempComponent = () => {
             <tbody>
               <tr>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
-                  • Dr Chunting Chris Mi
+                  Dr Chunting Chris Mi
                 </td>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
                   San Diego State University, USA
@@ -585,7 +585,7 @@ const TempComponent = () => {
               </tr>
               <tr>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
-                  • Dr Dong-Soo Kwon
+                  Dr Dong-Soo Kwon
                 </td>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
                   KAIST, South Korea
@@ -593,7 +593,7 @@ const TempComponent = () => {
               </tr>
               <tr>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
-                  • Dr Vikram Kapila
+                  Dr Vikram Kapila
                 </td>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
                   NYU Tandon School of Engineering, USA
@@ -601,7 +601,7 @@ const TempComponent = () => {
               </tr>
               <tr>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
-                  • Dr Xiao-Zhi Gao
+                  Dr Xiao-Zhi Gao
                 </td>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
                   University of Eastern Finland, Finland
@@ -609,7 +609,7 @@ const TempComponent = () => {
               </tr>
               <tr>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
-                  • Dr Yuval Shavitt
+                  Dr Yuval Shavitt
                 </td>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
                   Tel Aviv University, Israel
@@ -617,7 +617,7 @@ const TempComponent = () => {
               </tr>
               <tr>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
-                  • Dr Richard Voyles
+                  Dr Richard Voyles
                 </td>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
                   Purdue University, USA
@@ -625,7 +625,7 @@ const TempComponent = () => {
               </tr>
               <tr>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
-                  • Dr Jai Govind Singh
+                  Dr Jai Govind Singh
                 </td>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
                   Asian Institute of Technology, Bangkok
@@ -633,7 +633,7 @@ const TempComponent = () => {
               </tr>
               <tr>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
-                  • Dr Vigna Kumaran Ramachandaramurthy
+                  Dr Vigna Kumaran Ramachandaramurthy
                 </td>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
                   Universiti Tenaga Nasional, Malaysia
@@ -641,7 +641,7 @@ const TempComponent = () => {
               </tr>
               <tr>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
-                  • Dr Ahmed Zobaa
+                  Dr Ahmed Zobaa
                 </td>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
                   Brunel University, London, UK
@@ -649,7 +649,7 @@ const TempComponent = () => {
               </tr>
               <tr>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
-                  • Dr Tan Wei Hong
+                  Dr Tan Wei Hong
                 </td>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
                   Universiti Malaysia Perlis, Malaysia
@@ -657,7 +657,7 @@ const TempComponent = () => {
               </tr>
               <tr>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
-                  • Dr Barath Narayanan
+                  Dr Barath Narayanan
                 </td>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
                   University of Dayton Research Institute, USA
@@ -665,7 +665,7 @@ const TempComponent = () => {
               </tr>
               <tr>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
-                  • Dr M Murugappan
+                  Dr M Murugappan
                 </td>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
                   Kuwait College of Science and Technology , Kuwait
@@ -673,7 +673,7 @@ const TempComponent = () => {
               </tr>
               <tr>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
-                  • Ms Abinaya Nagarajan
+                  Ms Abinaya Nagarajan
                 </td>
                 <td style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
                   JP Morgan Chase & Co., Singapore
@@ -681,7 +681,7 @@ const TempComponent = () => {
               </tr>
               <tr>
                 <td style={{ padding: '12px 20px' }}>
-                  • Dr P N Suganthan
+                  Dr P N Suganthan
                 </td>
                 <td style={{ padding: '12px 20px' }}>
                   Qatar University , Qatar

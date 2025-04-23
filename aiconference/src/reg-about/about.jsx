@@ -93,7 +93,7 @@ const About = () => {
             <div style={{ flex: '1.5' }}>
               <p>
                 The growth of Artificial Intelligence must be guided by strong ethical principles and Responsible AI, ensuring that its development promotes fairness, transparency, and societal well-being.
-                The AI Consortium at PSG College of Technology, inspired by the vision of EPIQAI – Empowering Ethics, Progress, Innovation & Quality in AI, serves as a dynamic platform for fostering AI research, innovation, and industry collaboration. AICTE has declared 2025 as the Year of AI, emphasizing its integration into higher education to prepare students for an AI-driven world.
+                The AI Consortium at PSG College of Technology, inspired by the vision of EPIQ AI – Empowering Ethics, Progress, Innovation & Quality in AI, serves as a dynamic platform for fostering AI research, innovation, and industry collaboration. AICTE has declared 2025 as the Year of AI, emphasizing its integration into higher education to prepare students for an AI-driven world.
               </p>
 
                 <h3 style={{ fontSize: '1.25rem', fontWeight: 'bold', marginTop: '1rem' }}>Key Measures for AI Integration</h3>

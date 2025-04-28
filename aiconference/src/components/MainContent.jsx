@@ -8,7 +8,7 @@ import {
   Line
 } from './App.styles';
 
-import PSGLogo from '../assets/PSG_CT_Logo.png';
+import PSGLogo from '../assets/PSG_College_of_Technology_logo.png';
 import AIConsLogo from '../assets/AI_Cons_logo.png';
 
 const MainContent = () => {

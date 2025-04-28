@@ -14,7 +14,6 @@ const Navbar = () => {
   };
 
   const goToCommittee = () => {
-    // Use the global state set in App.jsx
     if (window.appState) {
       window.appState.setShowTemp(true);
     }
@@ -79,10 +78,10 @@ const Navbar = () => {
             Sponsors
           </li>
           <li 
-            className={activeSection === "welcome" ? "active" : ""} 
-            onClick={() => scrollToSection("welcome")}
+            className={activeSection === "events" ? "active" : ""} 
+            onClick={() => scrollToSection("EventsSection")}
           >
-            Welcome to Coimbatore
+            Events
           </li>
         </ul>
       </div>

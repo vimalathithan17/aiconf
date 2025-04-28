@@ -11,7 +11,8 @@ import EventsSection from './events.jsx';
 import VenueContactSection from './VenueContactSection.jsx';
 import Footer from './Footer.jsx';
 import About from './reg-about/about.jsx';
-import Reg from './reg-about/reg.jsx';
+import ImpDates from './reg-about/reg.jsx';
+import RegDetails from './reg-about/reg.jsx';
 import WelcomeCardSection from './cbeplaces.jsx';
 import MainContent from './components/MainContent.jsx';
 import TempComponent from './temp.jsx';
@@ -91,8 +92,8 @@ function App() {
   <br />
   <div id="theme"><ThemeSection /></div><br />
   <div id="cfp"><CallForPapers /></div>
-  <div id="topics"><TopicsSection /></div>
-  <div id="registration"><Reg /></div>
+  <div id="imp-dates"><ImpDates /></div>
+  <div id="registration"><RegDetails /></div>
   <div id="venue-contact"><VenueContactSection /></div>
   <div id="sponsors"><Sponsor /></div>
   <div id="events"><EventsSection/></div>

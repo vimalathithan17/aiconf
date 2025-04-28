@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import psgImage from './PSGTECH.jpeg';
 import psgAiImage from './AICons_logo.jpg';
-import psgCareImage from './psgcare.png';
+import psgCareImage from './PSGCARE.jpg';
 
 const SeeMore = ({ children }) => {
   const [showMore, setShowMore] = useState(false);
@@ -41,24 +41,25 @@ const About = () => {
                 alt="PSG College main building"
                 style={{
                   width: '100%',
-                  height: '300px',
+                  height: '250px',
                   borderRadius: '8px',
                   boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
                   marginTop: '20px',
                 }}
               />
             </div>
-            <div style={{ flex: '1.5' }}>
+            <div style={{ flex: '1.5', padding: '2rem 0' }}>
               <p>
                 PSG College of Technology (PSG CT) established by PSG & Sons' Charities. It is a premier institution, imparting relevant Engineering education since 1951. College has a very strong Alumni network. Our Alumni occupy top positions in Government and Corporate Sector. The College offers 21 undergraduate programmes and 24 postgraduate programmes including Engineering and Technology, Computer Applications, Management Sciences, Basic and Applied Sciences.
               </p>
-              <p>
-                PSG CT is equipped with several state-of-the-art Centers of Excellence that include TIFAC Core in Product Design, Machine Tool Research Centre, Engineering Design Centre, Virtual Reality Centre, Tool and Die Centre for Nano-technology, Centre for Robotics, Centre for excellence in Artificial Intelligence and Software, Centre for Non-Linear Dynamics, Danfoss Centre of Excellence for Welding Engineering and Technology.
-              </p>
+              
 
               <SeeMore>
+              <p>
+                PSG CT is equipped with several state-of-the-art Centers of Excellence that include TIFAC Core in Product Design, Machine Tool Research Centre, Engineering Design Centre, Virtual Reality Centre, Tool and Die Centre for Nano-technology, Centre for Robotics, Centre for excellence in Artificial
+              </p>
                 <p>
-                  Under the banner of PSG Industrial Institute, there are in-campus manufacturing units of machine tools, pumps, motors and off-campus foundry units. Furthermore, PSG CT has established very good network with industry, research institutes, alumni and entrepreneurs.
+                Under the banner of PSG Industrial Institute, there are in-campus manufacturing units of machine tools, pumps, motors and off-campus foundry units. Furthermore, PSG CT has established very good network with industry, research institutes, alumni and entrepreneurs.
                 </p>
                 <p style={{ marginTop: '1.5rem' }}>
                   PSG CT was ranked second under Colleges/Institutes (Govt. & Govt. Aided) (Technical) by ATAL Ranking of Institutions on Innovation Achievements (ARRIIA), Ministry of Education, Government of India in the year 2021 and the best industry linked institution on by AICTE-CII in the year 2012.
@@ -136,7 +137,7 @@ const About = () => {
                 alt="PSG CARE"
                 style={{
                   width: '100%',
-                  height: '350px',
+                  height: '250px',
                   borderRadius: '8px',
                   boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
                   marginTop: '20px',
@@ -150,12 +151,14 @@ const About = () => {
               <p>
                 The center also focuses on creating and sustaining effective faculty student relationships and aims to pursue its mission.
               </p>
-
+                <SeeMore>
                 <ul style={{ paddingLeft: '1.5rem' }}>
                   <li>Helping faculty members assess the effectiveness of their teaching through appropriate student and peer feedback mechanisms</li>
                   <li>Encouraging research activities that enhance the quality of teaching at PSG</li>
                   <li>Supporting dissemination of research findings about the teaching learning process</li>
                 </ul>
+                </SeeMore>
+                
             </div>
           </div>
         </section>

@@ -48,10 +48,10 @@ const Navbar = () => {
             Call for Papers
           </li>
           <li 
-            className={activeSection === "topics" ? "active" : ""} 
-            onClick={() => scrollToSection("topics")}
+            className={activeSection === "imp-dates" ? "active" : ""} 
+            onClick={() => scrollToSection("imp-dates")}
           >
-            Topics
+            Important Dates
           </li>
           <li 
             className={activeSection === "theme" ? "active" : ""} 
@@ -79,7 +79,7 @@ const Navbar = () => {
           </li>
           <li 
             className={activeSection === "events" ? "active" : ""} 
-            onClick={() => scrollToSection("EventsSection")}
+            onClick={() => scrollToSection("events")}
           >
             Events
           </li>

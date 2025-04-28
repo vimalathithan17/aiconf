@@ -72,3 +72,4 @@ const EventsSection = () => {
 };
 
 export default EventsSection;
+

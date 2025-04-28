@@ -7,6 +7,7 @@ import ThemeSection from './Theme/theme.jsx';
 import TopicsSection from './Topics/Topics.jsx';
 import CallForPapers from './CallForPaper/CallForPaper.jsx';
 import Sponsor from './Sponsor.jsx';
+import EventsSection from './events.jsx';
 import VenueContactSection from './VenueContactSection.jsx';
 import Footer from './Footer.jsx';
 import About from './reg-about/about.jsx';
@@ -14,6 +15,7 @@ import Reg from './reg-about/reg.jsx';
 import WelcomeCardSection from './cbeplaces.jsx';
 import MainContent from './components/MainContent.jsx';
 import TempComponent from './temp.jsx';
+
 
 function App() {
   const [count, setCount] = useState(0);
@@ -83,18 +85,21 @@ function App() {
           </div>
 
           {/* Section Content */}
-          <div style={{ color: '#FFFFFF', position: 'relative', zIndex: 1 }}>
-            <div id="about"><About /></div>
-            <br />
-            <div id="theme"><ThemeSection /></div><br />
-            <div id="cfp"><CallForPapers /></div>
-            <div id="topics"><TopicsSection /></div>
-            <div id="registration"><Reg /></div>
-            <div id="venue-contact"><VenueContactSection /></div>
-            <div id="sponsors"><Sponsor /></div>
-            <div id="welcome"><WelcomeCardSection /></div>
-            <Footer/>
-          </div>
+{/* Section Content */}
+<div style={{ color: '#FFFFFF', position: 'relative', zIndex: 1 }}>
+  <div id="about"><About /></div>
+  <br />
+  <div id="theme"><ThemeSection /></div><br />
+  <div id="cfp"><CallForPapers /></div>
+  <div id="topics"><TopicsSection /></div>
+  <div id="registration"><Reg /></div>
+  <div id="venue-contact"><VenueContactSection /></div>
+  <div id="sponsors"><Sponsor /></div>
+  <div id="events"><EventsSection/></div>
+  <div id="welcome"><WelcomeCardSection /></div> {/* Places in Coimbatore */}
+  <Footer/>
+</div>
+
         </>
       )}
     </>

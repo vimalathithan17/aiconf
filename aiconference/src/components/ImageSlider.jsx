@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import psg1 from '../assets/DJI_0165.jpg';
-import psg2 from '../assets/DJI_0192.jpg';
-import psg3 from '../assets/DJI_0200.jpg';
-import psg4 from '../assets/DJI_0234.jpg';
+import psg1 from '../assets/DJI_0165.JPG';
+import psg2 from '../assets/DJI_0192.JPG';
+import psg3 from '../assets/DJI_0200.JPG';
+import psg4 from '../assets/DJI_0234.JPG';
 
 const SliderContainer = styled.div`
   position: relative;

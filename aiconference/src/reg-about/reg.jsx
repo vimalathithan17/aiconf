@@ -231,7 +231,7 @@ const RegDetails = () => {
   );
 };
 
-// Main Component that uses all three components
+// Main Component - This is the main component that will be used in App.jsx
 const Reg = () => {
   return (
     <div style={{ 
@@ -241,12 +241,11 @@ const Reg = () => {
       color: 'white'
     }}>
       <PaperSubmission />
-      <ImpDates />
       <RegDetails />
     </div>
   );
 };
 
-// Export all components
-export { PaperSubmission, ImpDates, RegDetails };
+// Export individual components and default export Reg
+// export { PaperSubmission };
 export default Reg;

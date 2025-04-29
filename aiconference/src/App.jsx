@@ -16,6 +16,7 @@ import RegDetails from './reg-about/reg.jsx';
 import WelcomeCardSection from './cbeplaces.jsx';
 import MainContent from './components/MainContent.jsx';
 import TempComponent from './temp.jsx';
+import Dates from './imp.jsx';
 
 
 function App() {
@@ -92,11 +93,12 @@ function App() {
   <br />
   <div id="theme"><ThemeSection /></div><br />
   <div id="cfp"><CallForPapers /></div>
-  <div id="imp-dates"><ImpDates /></div>
+  <div id="topics"><TopicsSection /></div>
+  <div id="Dates"><Dates /></div>
   <div id="registration"><RegDetails /></div>
+  <div id="events"><EventsSection/></div>
   <div id="venue-contact"><VenueContactSection /></div>
   <div id="sponsors"><Sponsor /></div>
-  <div id="events"><EventsSection/></div>
   <div id="welcome"><WelcomeCardSection /></div> {/* Places in Coimbatore */}
   <Footer/>
 </div>

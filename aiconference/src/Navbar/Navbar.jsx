@@ -42,28 +42,41 @@ const Navbar = () => {
             Committee
           </li>
           <li 
-            className={activeSection === "cfp" ? "active" : ""} 
-            onClick={() => scrollToSection("cfp")}
-          >
-            Call for Papers
-          </li>
-          <li 
-            className={activeSection === "imp-dates" ? "active" : ""} 
-            onClick={() => scrollToSection("imp-dates")}
-          >
-            Important Dates
-          </li>
-          <li 
             className={activeSection === "theme" ? "active" : ""} 
             onClick={() => scrollToSection("theme")}
           >
             Theme
           </li>
           <li 
+            className={activeSection === "cfp" ? "active" : ""} 
+            onClick={() => scrollToSection("cfp")}
+          >
+            Call for Papers
+          </li>
+          <li
+            className={activeSection === "topics" ? "active" : ""} 
+            onClick={() => scrollToSection("topics")}
+          >
+            Topics
+          </li>
+          <li 
+            className={activeSection === "Dates" ? "active" : ""} 
+            onClick={() => scrollToSection("Dates")}
+          >
+            Important Dates
+          </li>
+          
+          <li 
             className={activeSection === "registration" ? "active" : ""} 
             onClick={() => scrollToSection("registration")}
           >
             Registration
+          </li>
+          <li 
+            className={activeSection === "events" ? "active" : ""} 
+            onClick={() => scrollToSection("events")}
+          >
+            Events
           </li>
           <li 
             className={activeSection === "venue-contact" ? "active" : ""} 
@@ -77,12 +90,7 @@ const Navbar = () => {
           >
             Sponsors
           </li>
-          <li 
-            className={activeSection === "events" ? "active" : ""} 
-            onClick={() => scrollToSection("events")}
-          >
-            Events
-          </li>
+          
         </ul>
       </div>
     </nav>

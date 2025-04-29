@@ -1,10 +1,15 @@
 import React from 'react';
+// Import the image for preconference
+import workshops from './assets/workshops.png';
+import keynote from './assets/keynote.jpg';
+import expo from './assets/expo.png';
+import paper from './assets/paper.png';
 
 const eventData = [
-  { title: 'Preconference Workshops', img: '/events/event1.png' },
-  { title: 'Keynote Address', img: '/events/event2.png' },
-  { title: 'Project Expo', img: '/events/event3.png' },
-  { title: 'Paper Presentation', img: '/events/event4.png' }
+  { title: 'Preconference Workshop', img: workshops },
+  { title: 'Keynote Speakers Address', img: keynote },
+  { title: 'Project Expo', img: expo },
+  { title: 'Paper Presentation', img: paper },
 ];
 
 const EventsSection = () => {
@@ -52,7 +57,7 @@ const EventsSection = () => {
             <img 
               src={event.img} 
               alt={event.title} 
-              style={{ width: '100%', height: '180px', objectFit: 'cover' }}
+              style={{ width: '100%', height: '250px', objectFit: 'cover' }}
             />
             <div style={{ padding: '10px' }}>
               <h3 style={{ 
